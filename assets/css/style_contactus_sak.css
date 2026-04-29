@@ -4,110 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 60px;
-}
-
-.navbar{
-    width: 100%;
-    height: 60px;
-    background-color: #1f2937;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.container{
-    width: 1200px;
-    margin: auto;
-}
-
-.navbar .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    font-family: "Poppins";
-}
-
-.navbar-brand{
-    color: lightpink;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.navbar-nav{
-    list-style-type: none;
-    display: flex;
-}
-
-.nav-item{
-    position: relative;
-}
-
-.nav-link{
-    color: white;
-    text-decoration: none;
-    padding: 0 20px;
-    font-size: 20px;
-}
-
-.nav-link:hover{
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 20px;
-    text-decoration-color: #cbeef3;
-}
-
-.dropdown{
-    width: 150px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #1f2937;
-    display: none;
-    padding: 10px 0;
-    border-radius: 5px;
-}
-
-.nav-item:hover .dropdown{
-    display: block;
-}
-
-.right{
-    display: flex;
-    align-items: center;
-}
-
-.navbar-cart{
-    border: none;
-    text-decoration: none;
-    padding: 5px 25px;
-    color: white;
-    font-size: 18px;
-    border-radius: 30px;
-}
-
-.navbar-cart:hover{
-    background-color: lightgray;
-    transition: 0.5s;
-    color: black;
-}
-
-.icon{
-    padding-right: 5px;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.testimonial-text{
-    font-family: "Kantumruy Pro","Poppins";
-}
 .contact-us-container{
     width: 1200px;
     /* height: 100px; */
@@ -131,11 +27,7 @@ body {
     margin: 20px auto;
     /* background-color: gray; */
 }
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  background: #eaf3fb;
-}
+
 
 .wrap {
   width: 1200px;      /* fixed width */
@@ -180,28 +72,7 @@ textarea.field {
 .full {
   grid-column: 1 / -1;
 }
-.btn{
-    width: 100%;
-    /* height: 40px; */
-    margin: 20px  auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: red; */
-}
-.btn .btn-style{
-    width: 150px;
-    font-size: 20px;
-    background-color: skyblue;
-    padding: 10px 0px;
-    border-radius: 10px;
-    border-color: #6b6b6b;
-    transition: 0.5s;
 
-}
-.btn-style:hover{
-    transform: scale(1.1);
-}
 .follow-us{
     width: 1200px;
     height: 100px;
@@ -232,7 +103,7 @@ textarea.field {
   color: white;
   padding: 64px 0 32px;
   margin-top: 80px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 .footer-container {

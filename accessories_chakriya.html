@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessaries</title>
     <link rel="stylesheet" href="assets/css/style_chakriya.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -22,64 +22,71 @@
 
 <body>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="sec">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
             <div class="container">
                 <a href class="navbar-brand">
                     <img src="assets/img/logo-sak-img-removebg-preview.png" alt class="logo" width="80px">
                 </a>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class=" navbar-nav  m-auto mb-2 mb-lg-0">
+                    <ul class=" navbar-nav  m-auto mb-2 mb-lg-0 gap-3">
                         <li class="nav-item">
-                            <a href="indext.html" class="nav-link">ដើម</a>
+                            <a href="indext.html" class="nav-link hover-underline"><i class="bi bi-house-door"></i>
+                                ទំព័រដើម</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">លក់</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bag-fill"></i> ទំនិញ
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a href="men_chakriya.html" class="item">បុរស</a></li>
-                                <li><a href="women_chakriya.html" class="item">នារី</a></li>
-                                <li><a href="accessories_chakriya.html" class="item">សម្ភារៈ</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">បុរស</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">នារី</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="#">សម្ភារៈ</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="about_us_sak.html" class="nav-link">អំពីពួកយើង</a>
+                            <a href="about_us_sak.html" class="nav-link hover-underline"><i
+                                    class="bi bi-people-fill"></i> អំពីពួកយើង</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact_us_sak.html" class="nav-link">ទំនាក់ទំនង</a>
+                            <a href="contact_us_sak.html" class="nav-link hover-underline"><i
+                                    class="bi bi-telephone"></i> ទំនាក់ទំនង</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">រដូវកាល</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-fire"></i> រដូវកាល
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a href="summer_sokmean.html" class="item">រដូវក្ដៅ</a></li>
-                                <li><a href="winter_sokmean.html" class="item">រដូវត្រជាក់</a></li>
-                                <li><a href="khmernewyear_sokmean.html" class="item">ចូលឆ្នាំខ្មែរ</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">រដូវក្ដៅ</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">រដូវត្រជាក់</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="#">ចូលឆ្នាំខ្មែរ</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <div class="right">
-    
-                        <div class="page-body-container">
-    
-                            <div class="dropdown-container-wrapper">
-                                <a href="addtocard_roeun.html" class="navbar-cart"><i
-                                        class="fa-solid fa-user-plus icon"></i>កន្រ្តក</a>
-                                <a href="login_nit.html" class="navbar-cart"><i
-                                        class="fa-solid fa-user-plus icon"></i>ចូលគណនី</a>
-                                <a href="login_nit.html" class="navbar-cart"><i
-                                        class="fa-solid fa-user-plus icon"></i>ចូលគណនី</a>
-                            </div>
-    
-                        </div>
+                    <div class=" d-flex gap-3 buttn">
+                        <a href="addtocard_roeun.html" class=" btn btn-outline-warning rounded-pill fs-6 px-3"><i
+                                class="bi bi-cart-plus"></i> កន្រ្តក</a>
+                        <a href="login_nit.html" class="btn fs-6 btn-outline-warning rounded-pill px-3"><i
+                                class="fa-solid fa-user-plus icon"></i> ចូលគណនី</a>
                     </div>
                 </div>
             </div>
         </nav>
-    
+
+    </div>
+
+    <!-- ------- -->
+
     <section class="banner">
-        <img class=" img-fluid w-100" src="assets/img/accessories/fashion-accessories-word-concepts-banner-vector-28883487.jpg"
-            alt="">
+        <img class=" img-fluid w-100"
+            src="assets/img/accessories/fashion-accessories-word-concepts-banner-vector-28883487.jpg" alt="">
     </section>
     <section class="sec-1 py-5">
         <div class="container mb-5">
@@ -88,8 +95,9 @@
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <!-- 1 -->
                     <div class="card">
-                        <img src="assets/img/accessories/acs-1.jpg" class="card-img-top position-relative img-card ass-img" alt="..."
-                            data-bs-toggle="modal" data-bs-target="#Modal1">
+                        <img src="assets/img/accessories/acs-1.jpg"
+                            class="card-img-top position-relative img-card ass-img" alt="..." data-bs-toggle="modal"
+                            data-bs-target="#Modal1">
                         <p class=" position-absolute just-in">Just In</p>
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
@@ -113,8 +121,8 @@
                 <!-- 2 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-2.jpg" class="card-img-top img-card ass-img" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal2">
+                        <img src="assets/img/accessories/acs-2.jpg" class="card-img-top img-card ass-img" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal2">
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
                                 <h6 class="card-title">Accessaries</h6>
@@ -136,8 +144,8 @@
                 <!-- 3 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-3.jpg" class="card-img-top img-card ass-img" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal3">
+                        <img src="assets/img/accessories/acs-3.jpg" class="card-img-top img-card ass-img" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal3">
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
                                 <h6 class="card-title">Accessaries</h6>
@@ -160,8 +168,8 @@
                 <!-- 4 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-4.jpg" class="card-img-top img-card ass-img" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal4">
+                        <img src="assets/img/accessories/acs-4.jpg" class="card-img-top img-card ass-img" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal4">
                         <p class=" position-absolute just-in">Just In</p>
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
@@ -184,8 +192,8 @@
                 <!-- 5 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-5.jpg" class="card-img-top img-card" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal5">
+                        <img src="assets/img/accessories/acs-5.jpg" class="card-img-top img-card" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal5">
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
                                 <h6 class="card-title">Accessaries</h6>
@@ -207,8 +215,8 @@
                 <!-- 6 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-6.jpg" class="card-img-top img-card" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal6">
+                        <img src="assets/img/accessories/acs-6.jpg" class="card-img-top img-card" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal6">
                         <p class=" position-absolute just-in">Just In</p>
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
@@ -231,8 +239,8 @@
                 <!-- 7 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-7.jpg" class="card-img-top img-card" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal7">
+                        <img src="assets/img/accessories/acs-7.jpg" class="card-img-top img-card" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal7">
                         <p class=" position-absolute just-in">Just In</p>
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
@@ -255,9 +263,9 @@
                 <!-- 8 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-8.jpg" class="card-img-top img-card" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal8">
-                            
+                        <img src="assets/img/accessories/acs-8.jpg" class="card-img-top img-card" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal8">
+
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
                                 <h6 class="card-title">Accessaries</h6>
@@ -279,8 +287,8 @@
                 <!-- 9 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-9.jpg" class="card-img-top img-card" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal9">
+                        <img src="assets/img/accessories/acs-9.jpg" class="card-img-top img-card" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal9">
                         <p class=" position-absolute just-in">Just In</p>
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
@@ -303,9 +311,9 @@
                 <!-- 10 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-10.jpg" class="card-img-top img-card" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal10">
-                        
+                        <img src="assets/img/accessories/acs-10.jpg" class="card-img-top img-card" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal10">
+
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
                                 <h6 class="card-title">Accessaries</h6>
@@ -318,7 +326,7 @@
                             </div>
                             <p>$11.75</p>
                             <div class=" text-end">
-                                 <a href="#" class="btn btn-sm btn-outline-primary">ទិញអីឡូវនេះ <i
+                                <a href="#" class="btn btn-sm btn-outline-primary">ទិញអីឡូវនេះ <i
                                         class="bi bi-bag"></i></a>
                             </div>
                         </div>
@@ -327,9 +335,9 @@
                 <!-- 11 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-11.jpg" class="card-img-top img-card" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal11">
-                        
+                        <img src="assets/img/accessories/acs-11.jpg" class="card-img-top img-card" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal11">
+
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
                                 <h6 class="card-title">Accessaries</h6>
@@ -351,8 +359,8 @@
                 <!-- 12 -->
                 <div class="col-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="card">
-                        <img src="assets/img/accessories/acs-12.jpg" class="card-img-top img-card" alt="..." data-bs-toggle="modal"
-                            data-bs-target="#Modal12">
+                        <img src="assets/img/accessories/acs-12.jpg" class="card-img-top img-card" alt="..."
+                            data-bs-toggle="modal" data-bs-target="#Modal12">
                         <p class=" position-absolute just-in">Just In</p>
                         <div class="card-body">
                             <div class=" d-flex justify-content-between">
@@ -375,7 +383,8 @@
             </div>
         </div>
         <div class=" text-center">
-            <button type="button" class=" btn btn-outline-success py-2 px-4">មើលបន្ថែមទៀត<i class="bi bi-chevron-double-right"></i></button>
+            <button type="button" class=" btn btn-outline-success py-2 px-4 rounded-pill">មើលបន្ថែមទៀត<i
+                    class="bi bi-chevron-double-right"></i></button>
         </div>
 
     </section>
@@ -416,9 +425,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
 
@@ -463,9 +473,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -509,9 +520,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -555,9 +567,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -601,9 +614,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -647,9 +661,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -693,9 +708,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -739,9 +755,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -785,9 +802,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -831,9 +849,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -877,9 +896,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -923,9 +943,10 @@
                                 <button type="button" class="btn btn-outline-dark">1</button>
                                 <button type="button" class="btn btn-outline-secondary">+</button>
                             </div>
-                            
+
                             <div class=" mt-5">
-                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i></button>
+                                <button type="button" class=" btn btn-dark px-5">ដាក់ចូលកន្រ្តក <i
+                                        class="bi bi-cart3"></i></button>
 
                             </div>
                         </div>
@@ -936,11 +957,56 @@
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-brand">
+                    <a class="footer-logo">
+                        <img src="assets/img/logo-sak-img-removebg-preview.png" alt width="140px">
+                    </a>
+                    <div class="footer-socials">
+                        <a><i class="ri-facebook-fill"></i></a>
+                        <a><i class="ri-instagram-fill"></i></a>
+                        <a><i class="ri-twitter-x-fill"></i></a>
+                        <a><i class="ri-pinterest-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ហាង</h3>
+                    <ul>
+                        <li><a href="women_chakriya.html">នារី</a></li>
+                        <li><a href="men_chakriya.html">បុរស</a></li>
+                        <li><a href="accessories_chakriya.html">សម្ភារ:</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ក្រុមហ៊ុន</h3>
+                    <ul>
+                        <li><a href="about_us_sak.html">អំពីពួកយើង</a></li>
+                        <li><a href="contact_us_sak.html">ទំនាក់ទំនង</a></li>
+                        <li><a href="location_sak.html">ទីតាំង</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) { // Adjust this value based on when you want the color to change
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     </script>
 
 </body>

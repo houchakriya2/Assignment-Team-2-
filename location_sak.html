@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You&Me Shop</title>
+    <title>Location</title>
     <link rel="icon" href="assets/img/logo-sak-img-removebg-preview.png" type="image/png">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+     <link rel="stylesheet" href="assets/css/style_chakriya.css">
     <link rel="stylesheet" href="assets/css/style_location_sak.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link
@@ -17,58 +18,67 @@
         href="https://fonts.googleapis.com/css2?family=Exile&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
+    <div class="sec">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
             <div class="container">
                 <a href class="navbar-brand">
                     <img src="assets/img/logo-sak-img-removebg-preview.png" alt class="logo" width="80px">
                 </a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="indext.html" class="nav-link">ដើម</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">លក់</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="men_chakriya.html" class="item">បុរស</a></li>
-                            <li><a href="women_chakriya.html" class="item">នារី</a></li>
-                            <li><a href="accessories_chakriya.html" class="item">សម្ភារៈ</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about_us_sak.html" class="nav-link">អំពីពួកយើង</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact_us_sak.html" class="nav-link">ទំនាក់ទំនង</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">រដូវកាល</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="summer_sokmean.html" class="item">រដូវក្ដៅ</a></li>
-                            <li><a href="winter_sokmean.html" class="item">រដូវត្រជាក់</a></li>
-                            <li><a href="khmernewyear_sokmean.html" class="item">ចូលឆ្នាំខ្មែរ</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="right">
-
-                    <div class="page-body-container">
-
-                        <div class="dropdown-container-wrapper">
-                            <a href="addtocard_roeun.html" class="navbar-cart"><i
-                                    class="fa-solid fa-user-plus icon"></i>កន្រ្តក</a>
-                            <a href="login_nit.html" class="navbar-cart"><i
-                                    class="fa-solid fa-user-plus icon"></i>ចូលគណនី</a>
-                        </div>
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" navbar-nav  m-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a href="indext.html" class="nav-link hover-underline"><i class="bi bi-house-door"></i> ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bag-fill"></i> ទំនិញ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">បុរស</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">នារី</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="#">សម្ភារៈ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about_us_sak.html" class="nav-link hover-underline"><i class="bi bi-people-fill"></i> អំពីពួកយើង</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact_us_sak.html" class="nav-link hover-underline"><i class="bi bi-telephone"></i> ទំនាក់ទំនង</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-fire"></i> រដូវកាល
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">រដូវក្ដៅ</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">រដូវត្រជាក់</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="#">ចូលឆ្នាំខ្មែរ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class=" d-flex gap-3 buttn">
+                        <a href="addtocard_roeun.html" class=" btn btn-outline-warning rounded-pill fs-6 px-3"><i class="bi bi-cart-plus"></i> កន្រ្តក</a>
+                        <a href="login_nit.html" class="btn fs-6 btn-outline-warning rounded-pill px-3"><i
+                                class="fa-solid fa-user-plus icon"></i> ចូលគណនី</a>
                     </div>
                 </div>
+            </div>
         </nav>
-    </header>
+
+    </div>
     <div class="lct-container">
         <h1>Our Location</h1>
     </div>
@@ -115,5 +125,18 @@
         </div>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) { // Adjust this value based on when you want the color to change
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 
 </html>
