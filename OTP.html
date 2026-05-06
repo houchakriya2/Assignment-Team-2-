@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forget Password</title>
+    <title>OTP</title>
     <link rel="icon" href="assets/img/logo-sak-img-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style.register_nit.css">
@@ -24,25 +24,33 @@
     <div class="container">
         <div class=" d-flex justify-content-center align-items-center">
             <div class="card py-5 px-4">
-                <a href="login_nit.html" class="back"> <i class="bi bi-arrow-left text-secondary fs-4"></i></a>
+                <a href="forget_nit.html" class="back"> <i class="bi bi-arrow-left text-secondary fs-4"></i></a>
 
-                <h1 class=" fs-2 fw-bold text-info mb-4">ភ្លេចលេខសម្ងាត់</h1>
-                <p class=" fw-medium mb-1">សូមបញ្ចូលអ៊ីមែល ឬលេខទូរសព្ទរបស់អ្នក</p>
+                <h1 class=" fs-2 fw-bold text-info mb-4">ការផ្ទៀតផ្ទាត់</h1>
+                <p class=" fw-medium mb-1">សូមបញ្ចូលលេខកូដផ្ទៀងផ្ទាត់ ៤ ខ្ទង់ ដែលបានផ្ញើទៅកាន់អ៊ីមែលឬលេខទូរសព្ទរបស់អ្នក
+                </p>
                 <div class=" p-3">
-                    <div class="form-floating mb-5">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">អ៊ីមែល​ ​ឬ​ លេខទូរស័ព្ទ</label>
+                    <!-- OTP Input Group -->
+                    <div class="d-flex justify-content-center mb-4">
+                        <input type="text" class="otp-input" maxlength="1" pattern="\d*">
+                        <input type="text" class="otp-input" maxlength="1" pattern="\d*">
+                        <input type="text" class="otp-input" maxlength="1" pattern="\d*">
+                        <input type="text" class="otp-input" maxlength="1" pattern="\d*">
                     </div>
-                    <button type="button" onclick=" location.href='OTP.html'" class=" btn btn-info
-                        px-5 w-100 p-2">ផ្ញើ</button>
+                    <button type="button" onclick=" location.href='reset.html'" class=" btn btn-info
+                        px-5 w-100 p-2">ផ្ទៀងផ្ទាត់គណនី</button>
                 </div>
-                    
+                <div class=" d-flex justify-content-center gap-2">
+                    <p class=" fw-medium">មិនបានទទួលលេខកូដមែនទេ ?</p>
+                    <a href="" role="button" class=" text-decoration-none text-primary">ផ្ញើឡើងវិញ</a>
+                </div>
+
 
             </div>
 
         </div>
     </div>
-  
+
 </body>
 
 </html>

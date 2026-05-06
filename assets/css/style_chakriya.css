@@ -26,7 +26,7 @@ body{
 
 }
 
-.sec-1 .dis{
+.dis{
     color: red;
     text-decoration: line-through;
 }
@@ -349,4 +349,16 @@ textarea.field {
 .contact .bg-primary{
   background-color: #c3ced3a7 !important;
 
+}
+
+.me{
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.p-btn{
+  padding: 10px 15px !important;
+}
+.p-btn1{
+  padding: 3px 15px !important;
 }

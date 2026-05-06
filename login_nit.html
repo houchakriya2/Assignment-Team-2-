@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="icon" href="assets/img/logo-sak-img-removebg-preview.png" type="image/png">
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style.register_nit.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link
@@ -30,28 +30,37 @@
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
                 <div class="card py-5 px-4">
-                     <!-- <div id="liveAlertPlaceholder"></div> -->
-                    <h1 class=" fs-2 fw-bold text-info">Login</h1>
+                    <!-- <div id="liveAlertPlaceholder"></div> -->
+                    <a href="indext.html" class="back"> <i class="bi bi-arrow-left text-secondary fs-4"></i></a>
+                    <h1 class=" fs-2 fw-bold text-info">ចូលគណនី</h1>
                     <div class=" p-3">
                         <div class="form-floating mb-4">
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address or Phone Number</label>
+                            <label for="floatingInput">អ៊ីមែល​ ​ឬ​ លេខទូរស័ព្ទ</label>
                         </div>
                         <div class="form-floating mb-4">
                             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
+                            <label for="floatingPassword">លេខសម្ងាត់</label>
                         </div>
-                        <div class=" mb-4 text-start">
-                            <a href="forget_nit.html" role="button" class="text-decoration-none text-info">Forget Password?</a>                       
+                        <div class=" mb-4 text-start​​ d-flex justify-content-between">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label text-info" for="defaultCheck1">
+                                    ចង់ចាំលេខសម្ងាត់
+                                </label>
+                            </div>
+                            <a href="forget_nit.html" role="button"
+                                class="text-decoration-none text-info">ភ្លេចលេខសម្ងាត់?</a>
 
                         </div>
-                        
-                        <button type="button" class="btn btn-info px-5 w-100 p-2 mb-4" >Login</button>
+
+                        <button type="button" onclick=" location.href='account_me.html'" class="btn btn-info px-5 w-100 p-2 mb-4">ចូលគណនី</button>
 
 
                         <div class=" d-flex justify-content-center gap-2">
-                            <p class=" fw-medium">Not registered ?</p> 
-                            <a href="register_nit.html" role="button" class=" text-decoration-none text-primary">Create an account</a>                       
+                            <p class=" fw-medium">មិនទាន់ចុះឈ្មោះ ?</p>
+                            <a href="register_nit.html" role="button"
+                                class=" text-decoration-none text-primary">បង្កើតគណនី</a>
                         </div>
 
                     </div>

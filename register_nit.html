@@ -21,46 +21,69 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class=" d-flex justify-content-center align-items-center">
-            <div class="card py-5 px-4">
-                <div id="liveAlertPlaceholder"></div>
-                <h1 class=" fs-2 fw-bold text-info">Register</h1>
-                <div class=" p-3">
-                    <div class="form-floating mb-4">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name">
-                        <label for="floatingInput">First Name</label>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name">
-                        <label for="floatingPassword">Last Name</label>
-                    </div>
 
-                    <div class="form-floating mb-4">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address or Phone Number</label>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="address">
-                        <label for="floatingInput">Address</label>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Confirm Password</label>
-                    </div>
-                    <button type="button" class="btn btn-info px-5 w-100 p-2 mb-4" id="liveAlertBtn">Register</button>
-                    <div class=" d-flex justify-content-center gap-2">
-                        <p class=" fw-medium">Already have an account ?</p> 
-                        <a href="login_nit.html" role="button" class=" text-decoration-none text-primary">Login Now</a>                       
+    <div class="container">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <img class=" logo" src="assets/img/logo/logo-sak-img-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <div class="card py-5 px-4">
+                    <a href="login_nit.html" class="back"> <i class="bi bi-arrow-left text-secondary fs-4"></i></a>
+                    <!-- <div id="liveAlertPlaceholder"></div> -->
+                    <h1 class=" fs-2 fw-bold text-info">ចុះឈ្មោះ</h1>
+                    <div class=" p-3">
+                        <div class="row mb-4">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                                    <label for="floatingInput">នាមត្រកូល</label>
+                                </div>
+
+                            </div>
+                            <div class=" col">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                                    <label for="floatingInput">នាមខ្លួន</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">អ៊ីមែល​ ​ឬ​ លេខទូរស័ព្ទ</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="address">
+                            <label for="floatingInput">ទីតាំង</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">លេខសម្ងាត់</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">បញ្ជាក់លេខសម្ងាត់</label>
+                        </div>
+                        <button type="button" onclick=" location.href='account_me.html'" class="btn btn-info px-5 w-100 p-2 mb-4"
+                            id="liveAlertBtn">ចុះឈ្មោះ</button>
+                        <div class=" d-flex justify-content-center gap-2">
+                            <p class=" fw-medium">តើអ្នកមានគណនីហើយឬ ?</p>
+                            <a href="login_nit.html" role="button"
+                                class=" text-decoration-none text-primary">ចូលគណនី</a>
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
+
 
         </div>
     </div>
@@ -86,7 +109,7 @@
             })
         }
     </script>
-    
+
 </body>
 
 </html>
