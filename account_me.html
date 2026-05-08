@@ -89,7 +89,8 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">មើលគណនី</a></li>
                             <li><a class="dropdown-item" href="#">ប្រវត្តិទិញទំនិញ</a></li>
-                            <li><a class="dropdown-item" href="indext.html">ចេញពីគណនី</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">ចេញពីគណនី</a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,464 +98,481 @@
         </div>
     </nav>
 
-    <main>
-        <section class="hero-section">
-            <div class="overlay"></div>
-            <div class="hero-content">
-                <div class="text-box">
-                    <h1 class="hero-title">រដូវក្តៅ 2026</h1>
-                    <div class="p">
-                        <p class="hero-description">
-                            ស្វែងយល់ពីនិន្នាការចុងក្រោយបំផុត
-                            និងលើកកំពស់រចនាបទរបស់អ្នកជាមួយនឹងការប្រមូលរដូវក្តៅផ្តាច់មុខរបស់យើង
-                            <br>ការផ្តល់ជូនពេលវេលាមានកំណត់។
-                        </p>
-                    </div>
-                </div>
-                <div class="button-group">
-                    <a href="indext.html" class="btn btn-primary">ទិញឥឡូវ</a>
-                </div>
-            </div>
-        </section>
-        <section class="category-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="trending-title">ទិញទំនិញតាមប្រភេទ</h2>
-                    <p class="trending-subtitle">ស្វែងរកអ្វីដែលអ្នកកំពុងស្វែងរក</p>
-                </div>
-                <div class="category-grid">
-
-                    <!-- Men -->
-                    <div class="category-card">
-                        <img src="assets/img/men.jpg" alt="Men's Fashion" />
-                        <div class="card-overlay">
-                            <div class="card-content">
-                                <h3>បុរស</h3>
-                                <a href="men_chakriya.html">មើលទំនិញរបស់យើង <i class="ri-arrow-right-line"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Women -->
-                    <div class="category-card">
-                        <img src="assets/img/women.jpg" alt="Women's Fashion" />
-                        <div class="card-overlay">
-                            <div class="card-content">
-                                <h3>នារី</h3>
-                                <a href="women_chakriya.html">មើលទំនិញរបស់យើង <i class="ri-arrow-right-line"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accessories -->
-                    <div class="category-card">
-                        <img src="assets/img/accessories.jpg" alt="Accessories" />
-                        <div class="card-overlay">
-                            <div class="card-content">
-                                <h3>សម្ភារៈ</h3>
-                                <a href="accessories_chakriya.html">មើលទំនិញរបស់យើង
-                                    <i class="ri-arrow-right-line"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="header">
-                    <h2 class="title">មកដល់ថ្មីៗ</h2>
-                </div>
-                <div class="product-grid">
-                    <!-- Product 1 -->
-                    <article class="product-card">
-                        <div class="image-wrapper">
-                            <img src="assets/img/new arrival/product-4.jpg" alt="Summer Dress" class="product-image" />
-                            <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
-                        </div>
-                        <div class="product-info">
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="reviews">(24)</span>
-                            </div>
-                            <h3 class="product-name">Dark Blue suit</h3>
-                            <div class="price-container">
-                                <span class="price-current">$89.99</span>
-                                <span class="price-original">$129.99</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Product 2 -->
-                    <article class="product-card">
-                        <div class="image-wrapper">
-                            <img src="assets/img/new arrival/product-5.jpg" alt="Linen Shirt" class="product-image" />
-                            <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
-                        </div>
-                        <div class="product-info">
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="reviews">(18)</span>
-                            </div>
-                            <h3 class="product-name">Black suit</h3>
-                            <div class="price-container">
-                                <span class="price-current">$89.99</span>
-                                <span class="price-original">$129.99</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Product 3 -->
-                    <article class="product-card">
-                        <div class="image-wrapper">
-                            <img src="assets/img/new arrival/product-6.jpg" alt="Leather Bag" class="product-image" />
-                            <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
-                        </div>
-                        <div class="product-info">
-                            <div class="rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="reviews">(32)</span>
-                            </div>
-                            <h3 class="product-name">Grey suit</h3>
-                            <div class="price-container">
-                                <span class="price-current">$89.99</span>
-                                <span class="price-original">$129.99</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="image-wrapper">
-                            <img src="assets/img/new arrival/product-1.jpg" alt="Summer Dress" class="product-image" />
-                            <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
-                        </div>
-                        <div class="product-info">
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="reviews">(24)</span>
-                            </div>
-                            <h3 class="product-name">Lightblue dress</h3>
-                            <div class="price-container">
-                                <span class="price-current">$89.99</span>
-                                <span class="price-original">$129.99</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="image-wrapper">
-                            <img src="assets/img/new arrival/product-2.jpg" alt="Summer Dress" class="product-image" />
-                            <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
-                        </div>
-                        <div class="product-info">
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="reviews">(24)</span>
-                            </div>
-                            <h3 class="product-name">Grey dress</h3>
-                            <div class="price-container">
-                                <span class="price-current">$89.99</span>
-                                <span class="price-original">$129.99</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="image-wrapper">
-                            <img src="assets/img/new arrival/product-3.jpg" alt="Summer Dress" class="product-image" />
-                            <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
-                        </div>
-                        <div class="product-info">
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="reviews">(24)</span>
-                            </div>
-                            <h3 class="product-name">Black dress</h3>
-                            <div class="price-container">
-                                <span class="price-current">$89.99</span>
-                                <span class="price-original">$129.99</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="view-all">
-                    <a href="indext.html" class="view-all-btn">មើលទំនិញទាំងអស់</a>
-                </div>
-
-            </div>
-        </section>
-        <section class="promo-section">
-            <div class="promo-container">
-                <div class="promo-left">
-                    <span class="promo-label">ការផ្តល់ជូនពេលវេលាមានកំណត់</span>
-                    <h2 class="promo-title">ការលក់រដូវក្តៅរហូតដល់ 50%</h2>
-                    <p class="promo-text">
-                        កុំខកខានការលក់ដ៏ធំបំផុតនៃរដូវកាលរបស់យើង។
-                        ធ្វើឱ្យការតុបតែងខោអាវរបស់អ្នកស្រស់ស្រាយជាមួយនឹងនិន្នាការចុងក្រោយបំផុតក្នុងតម្លៃដែលមិនអាចកាត់ថ្លៃបាន។
-                    </p>
-                    <a href="summer.html" class="promo-button">មើលទំនិញ</a>
-                </div>
-                <div class="promo-right">
-                    <img src="assets/img/promotion.jpg" alt="Summer Sale" class="promo-image" />
-                </div>
-            </div>
-        </section>
-        <section class="trending-section">
-            <div class="trending-wrapper">
-                <div class="trending-header">
-                    <h2 class="trending-title">កំពុងពេញនិយម</h2>
-                    <p class="trending-subtitle">ស្វែងយល់ពីអ្វីដែលពេញនិយមរដូវកាលនេះ។</p>
-                </div>
-                <div class="trending-grid">
-                    <article class="trend-card">
-                        <div class="trend-image-wrapper">
-                            <img src="assets/img/trending/trend-1.jpg" alt="Summer Outfit" class="trend-image" />
-                            <span class="trend-label trend-label-primary">ពេញនិយម</span>
-                        </div>
-                        <div class="trend-content">
-                            <h3 class="trend-heading">Red Wine outfit</h3>
-                            <a class="trend-link">ស្វែងរក</a>
-                        </div>
-                    </article>
-
-                    <article class="trend-card">
-                        <div class="trend-image-wrapper">
-                            <img src="assets/img/trending/trend-2.jpg" alt="Jewelry Collection" class="trend-image" />
-                            <span class="trend-label trend-label-primary">លក់ដាច់បំផុត</span>
-                        </div>
-                        <div class="trend-content">
-                            <h3 class="trend-heading">Fashion Black dress</h3>
-                            <a class="trend-link">ស្វែងរក</a>
-                        </div>
-                    </article>
-
-                    <article class="trend-card">
-                        <div class="trend-image-wrapper">
-                            <img src="assets/img/trending/trend-3.jpg" alt="Sustainable Fashion" class="trend-image" />
-                            <span class="trend-label trend-label-primary">លក់ដាច់បំផុត</span>
-                        </div>
-                        <div class="trend-content">
-                            <h3 class="trend-heading">Korean style</h3>
-                            <a class="trend-link">ស្វែងរក</a>
-                        </div>
-                    </article>
-
-                    <article class="trend-card">
-                        <div class="trend-image-wrapper">
-                            <img src="assets/img/trending/trend-4.jpg" alt="Sustainable Fashion" class="trend-image" />
-                            <span class="trend-label trend-label-primary">ពេញនិយម</span>
-                        </div>
-                        <div class="trend-content">
-                            <h3 class="trend-heading">Y2K outfit</h3>
-                            <a class="trend-link">ស្វែងរក</a>
-                        </div>
-                    </article>
-
-                    <article class="trend-card">
-                        <div class="trend-image-wrapper">
-                            <img src="assets/img/trending/trend-5.jpg" alt="Sustainable Fashion" class="trend-image" />
-                            <span class="trend-label trend-label-primary">លក់ដាច់បំផុត</span>
-                        </div>
-                        <div class="trend-content">
-                            <h3 class="trend-heading">Old Money outfit</h3>
-                            <a class="trend-link">ស្វែងរក</a>
-                        </div>
-                    </article>
-
-                    <article class="trend-card">
-                        <div class="trend-image-wrapper">
-                            <img src="assets/img/trending/trend-6.jpg" alt="Sustainable Fashion" class="trend-image" />
-                            <span class="trend-label trend-label-primary">លក់ដាច់បំផុត</span>
-                        </div>
-                        <div class="trend-content">
-                            <h3 class="trend-heading">2K25 Girl
-                                GenZOutfit</h3>
-                            <a class="trend-link">ស្វែងរក</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section class="testimonial-section">
-            <div class="testimonial-container">
-                <div class="testimonial-header">
-                    <h2 class="trending-title">មតិយោបលពីភ្ញៀវរបស់ពួកយើង</h2>
-                    <p class="trending-subtitle">បទពិសោធន៍ពិតៗ​ពីភ្ញៀវរបស់យើង</p>
-                </div>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                        </div>
-                        <p class="testimonial-text">
-                            "ខ្ញុំពិតជាចូលចិត្តគុណភាពសម្លៀកបំពាក់ពីហាងនេះ។
-                            រ៉ូបរដូវក្តៅដែលខ្ញុំបានទិញលើសពីការរំពឹងទុករបស់ខ្ញុំទាក់ទងនឹងសាច់ក្រណាត់ និងសម។
-                            ប្រាកដជានឹងមកទិញទំនិញនៅទីនេះម្តងទៀត!"
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="author-image-wrapper">
-                                <img src="assets/img/profile/pf-1.jpg" alt="Rebecca Anderson" class="author-image" />
-                            </div>
-                            <div class="author-info">
-                                <h4 class="author-name">Christaino
-                                    Ronaldo</h4>
-                                <p class="author-role">ភ្ញៀវVVIP</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                        </div>
-                        <p class="testimonial-text">
-                            "សេវាកម្មអតិថិជននៅទីនេះគឺពូកែណាស់។ ខ្ញុំមានបញ្ហាជាមួយទំហំ
-                            ហើយពួកគេពិតជាមានប្រយោជន៍ក្នុងការស្វែងរកសមត្រឹមត្រូវ។
-                            អាវក្រណាត់ដែលខ្ញុំបានទិញឥឡូវនេះគឺជារបស់ដែលខ្ញុំចូលចិត្តបំផុតសម្រាប់រដូវក្តៅ!"
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="author-image-wrapper">
-                                <img src="assets/img/profile/pf-2.jpg" alt="Michael Thompson" class="author-image" />
-                            </div>
-                            <div class="author-info">
-                                <h4 class="author-name">Lionel Messi</h4>
-                                <p class="author-role">ភ្ញៀវកាន់ឆ្នាំ</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star half-filled">&#9733;</span>
-                        </div>
-                        <p class="testimonial-text">
-                            "ខ្ញុំចាប់អារម្មណ៍នឹងការប្រមូលផ្ដុំប្រកបដោយនិរន្តរភាព។
-                            មិនត្រឹមតែសំលៀកបំពាក់ទាន់សម័យប៉ុណ្ណោះទេ
-                            ប៉ុន្តែការដឹងថាវាត្រូវបានផលិតឡើងដោយវត្ថុធាតុដើមដែលមិនប៉ះពាល់ដល់បរិស្ថាន
-                            ធ្វើឱ្យខ្ញុំមានអារម្មណ៍ល្អចំពោះការទិញរបស់ខ្ញុំ។ គុណភាពគឺពិសេស!"
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="author-image-wrapper">
-                                <img src="assets/img/profile/pf-3.jpg" alt="Olivia Martinez" class="author-image" />
-                            </div>
-                            <div class="author-info">
-                                <h4 class="author-name">Neymar JR</h4>
-                                <p class="author-role">ភ្ញៀវថ្មី</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="insta-section">
-            <div class="insta-container">
-                <div class="insta-header">
-                    <h2 class="insta-title">តាមដានពួកយើង</h2>
-                    <p class="insta-subtitle">
-                        តាមដានពួកយើងតាមរយ: Instagram
-                        <a><span class="insta-handle">@sakalex26_store</span></a>
-                    </p>
-                </div>
-                <div class="insta-grid">
-                    <a class="insta-item">
-                        <img src="assets/img/style-img/style-1.jpg" alt="Instagram Post" class="insta-image" />
-                        <div class="insta-overlay">
-                            <div class="insta-likes">
-                                <span class="heart-icon">❤</span>
-                                <span class="likes-count">142</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="insta-item">
-                        <img src="assets/img/style-img/style-2.jpg" alt="Instagram Post" class="insta-image" />
-                        <div class="insta-overlay">
-                            <div class="insta-likes">
-                                <span class="heart-icon">❤</span>
-                                <span class="likes-count">236</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="insta-item">
-                        <img src="assets/img/style-img/style-3.jpg" alt="Instagram Post" class="insta-image" />
-                        <div class="insta-overlay">
-                            <div class="insta-likes">
-                                <span class="heart-icon">❤</span>
-                                <span class="likes-count">189</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="insta-item">
-                        <img src="assets/img/style-img/style-4.jpg" alt="Instagram Post" class="insta-image" />
-                        <div class="insta-overlay">
-                            <div class="insta-likes">
-                                <span class="heart-icon">❤</span>
-                                <span class="likes-count">312</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="insta-item">
-                        <img src="assets/img/style-img/style-5.jpg" alt="Instagram Post" class="insta-image" />
-                        <div class="insta-overlay">
-                            <div class="insta-likes">
-                                <span class="heart-icon">❤</span>
-                                <span class="likes-count">278</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="insta-item">
-                        <img src="assets/img/style-img/style-6.jpg" alt="Instagram Post" class="insta-image" />
-                        <div class="insta-overlay">
-                            <div class="insta-likes">
-                                <span class="heart-icon">❤</span>
-                                <span class="likes-count">205</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="newsletter-section">
-            <div class="newsletter-container">
-                <div class="newsletter-content">
-                    <h2 class="newsletter-title">ផ្តល់មតិកែលម្អសម្រាប់ពួកយើង</h2>
-                    <p class="newsletter-description">
-                        អតិថិជនអាចនិយាយអ្វីទៅកាន់ហាងដើម្បីដោះស្រាយបញ្ហាណាមួយ
-                    </p>
-                    <form class="newsletter-form">
-                        <input type="text" placeholder="បញ្ចេញមតិរបស់អ្នក" class="newsletter-input" />
-                    </form>
-                    <button id="popupBtn">ដាក់បញ្ជូន</button>
-
-                    <div id="popup" class="popup">
-                        <div class="popup-content">
-                            <span id="closeBtn" class="close">&times;</span>
-                            <img src="assets/img/logo_web.png" alt="" width="70px">
-                            <h1>សូមអរគុណចំពោះមតិកែលម្អរបស់អ្នក</h1>
-                            <p>យើងសូមកោតសរសើរចំពោះដំណើរទស្សនកិច្ចរបស់អ្នក។ មានបទពិសោធន៍ទិញទំនិញដ៏អស្ចារ្យ!</p>
-                        </div>
-                    </div>
-                    <p class="newsletter-terms">
-                        សូមអរគុណដែលបានគាំទ្រពួកយើង
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="text-box">
+                <h1 class="hero-title">រដូវក្តៅ 2026</h1>
+                <div class="p">
+                    <p class="hero-description">
+                        ស្វែងយល់ពីនិន្នាការចុងក្រោយបំផុត
+                        និងលើកកំពស់រចនាបទរបស់អ្នកជាមួយនឹងការប្រមូលរដូវក្តៅផ្តាច់មុខរបស់យើង
+                        <br>ការផ្តល់ជូនពេលវេលាមានកំណត់។
                     </p>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="button-group">
+                <a href="indext.html" class="btn btn-primary">ទិញឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+    <section class="category-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="trending-title">ទិញទំនិញតាមប្រភេទ</h2>
+                <p class="trending-subtitle">ស្វែងរកអ្វីដែលអ្នកកំពុងស្វែងរក</p>
+            </div>
+            <div class="category-grid">
+
+                <!-- Men -->
+                <div class="category-card">
+                    <img src="assets/img/men.jpg" alt="Men's Fashion" />
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>បុរស</h3>
+                            <a href="men_chakriya.html">មើលទំនិញរបស់យើង <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Women -->
+                <div class="category-card">
+                    <img src="assets/img/women.jpg" alt="Women's Fashion" />
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>នារី</h3>
+                            <a href="women_chakriya.html">មើលទំនិញរបស់យើង <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="category-card">
+                    <img src="assets/img/accessories.jpg" alt="Accessories" />
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>សម្ភារៈ</h3>
+                            <a href="accessories_chakriya.html">មើលទំនិញរបស់យើង
+                                <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="header">
+                <h2 class="title">មកដល់ថ្មីៗ</h2>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img src="assets/img/new arrival/product-4.jpg" alt="Summer Dress" class="product-image" />
+                        <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(24)</span>
+                        </div>
+                        <h3 class="product-name">Dark Blue suit</h3>
+                        <div class="price-container">
+                            <span class="price-current">$89.99</span>
+                            <span class="price-original">$129.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img src="assets/img/new arrival/product-5.jpg" alt="Linen Shirt" class="product-image" />
+                        <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(18)</span>
+                        </div>
+                        <h3 class="product-name">Black suit</h3>
+                        <div class="price-container">
+                            <span class="price-current">$89.99</span>
+                            <span class="price-original">$129.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img src="assets/img/new arrival/product-6.jpg" alt="Leather Bag" class="product-image" />
+                        <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(32)</span>
+                        </div>
+                        <h3 class="product-name">Grey suit</h3>
+                        <div class="price-container">
+                            <span class="price-current">$89.99</span>
+                            <span class="price-original">$129.99</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img src="assets/img/new arrival/product-1.jpg" alt="Summer Dress" class="product-image" />
+                        <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(24)</span>
+                        </div>
+                        <h3 class="product-name">Lightblue dress</h3>
+                        <div class="price-container">
+                            <span class="price-current">$89.99</span>
+                            <span class="price-original">$129.99</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img src="assets/img/new arrival/product-2.jpg" alt="Summer Dress" class="product-image" />
+                        <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(24)</span>
+                        </div>
+                        <h3 class="product-name">Grey dress</h3>
+                        <div class="price-container">
+                            <span class="price-current">$89.99</span>
+                            <span class="price-original">$129.99</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img src="assets/img/new arrival/product-3.jpg" alt="Summer Dress" class="product-image" />
+                        <a href="addtocard_roeun.html" class="add-to-cart">ដាក់ចូលកន្ត្រក</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(24)</span>
+                        </div>
+                        <h3 class="product-name">Black dress</h3>
+                        <div class="price-container">
+                            <span class="price-current">$89.99</span>
+                            <span class="price-original">$129.99</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="view-all">
+                <a href="indext.html" class="view-all-btn">មើលទំនិញទាំងអស់</a>
+            </div>
+
+        </div>
+    </section>
+    <section class="promo-section">
+        <div class="promo-container">
+            <div class="promo-left">
+                <span class="promo-label">ការផ្តល់ជូនពេលវេលាមានកំណត់</span>
+                <h2 class="promo-title">ការលក់រដូវក្តៅរហូតដល់ 50%</h2>
+                <p class="promo-text">
+                    កុំខកខានការលក់ដ៏ធំបំផុតនៃរដូវកាលរបស់យើង។
+                    ធ្វើឱ្យការតុបតែងខោអាវរបស់អ្នកស្រស់ស្រាយជាមួយនឹងនិន្នាការចុងក្រោយបំផុតក្នុងតម្លៃដែលមិនអាចកាត់ថ្លៃបាន។
+                </p>
+                <a href="summer.html" class="promo-button">មើលទំនិញ</a>
+            </div>
+            <div class="promo-right">
+                <img src="assets/img/promotion.jpg" alt="Summer Sale" class="promo-image" />
+            </div>
+        </div>
+    </section>
+    <section class="trending-section">
+        <div class="trending-wrapper">
+            <div class="trending-header">
+                <h2 class="trending-title">កំពុងពេញនិយម</h2>
+                <p class="trending-subtitle">ស្វែងយល់ពីអ្វីដែលពេញនិយមរដូវកាលនេះ។</p>
+            </div>
+            <div class="trending-grid">
+                <article class="trend-card">
+                    <div class="trend-image-wrapper">
+                        <img src="assets/img/trending/trend-1.jpg" alt="Summer Outfit" class="trend-image" />
+                        <span class="trend-label trend-label-primary">ពេញនិយម</span>
+                    </div>
+                    <div class="trend-content">
+                        <h3 class="trend-heading">Red Wine outfit</h3>
+                        <a class="trend-link">ស្វែងរក</a>
+                    </div>
+                </article>
+
+                <article class="trend-card">
+                    <div class="trend-image-wrapper">
+                        <img src="assets/img/trending/trend-2.jpg" alt="Jewelry Collection" class="trend-image" />
+                        <span class="trend-label trend-label-primary">លក់ដាច់បំផុត</span>
+                    </div>
+                    <div class="trend-content">
+                        <h3 class="trend-heading">Fashion Black dress</h3>
+                        <a class="trend-link">ស្វែងរក</a>
+                    </div>
+                </article>
+
+                <article class="trend-card">
+                    <div class="trend-image-wrapper">
+                        <img src="assets/img/trending/trend-3.jpg" alt="Sustainable Fashion" class="trend-image" />
+                        <span class="trend-label trend-label-primary">លក់ដាច់បំផុត</span>
+                    </div>
+                    <div class="trend-content">
+                        <h3 class="trend-heading">Korean style</h3>
+                        <a class="trend-link">ស្វែងរក</a>
+                    </div>
+                </article>
+
+                <article class="trend-card">
+                    <div class="trend-image-wrapper">
+                        <img src="assets/img/trending/trend-4.jpg" alt="Sustainable Fashion" class="trend-image" />
+                        <span class="trend-label trend-label-primary">ពេញនិយម</span>
+                    </div>
+                    <div class="trend-content">
+                        <h3 class="trend-heading">Y2K outfit</h3>
+                        <a class="trend-link">ស្វែងរក</a>
+                    </div>
+                </article>
+
+                <article class="trend-card">
+                    <div class="trend-image-wrapper">
+                        <img src="assets/img/trending/trend-5.jpg" alt="Sustainable Fashion" class="trend-image" />
+                        <span class="trend-label trend-label-primary">លក់ដាច់បំផុត</span>
+                    </div>
+                    <div class="trend-content">
+                        <h3 class="trend-heading">Old Money outfit</h3>
+                        <a class="trend-link">ស្វែងរក</a>
+                    </div>
+                </article>
+
+                <article class="trend-card">
+                    <div class="trend-image-wrapper">
+                        <img src="assets/img/trending/trend-6.jpg" alt="Sustainable Fashion" class="trend-image" />
+                        <span class="trend-label trend-label-primary">លក់ដាច់បំផុត</span>
+                    </div>
+                    <div class="trend-content">
+                        <h3 class="trend-heading">2K25 Girl
+                            GenZOutfit</h3>
+                        <a class="trend-link">ស្វែងរក</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+            <div class="testimonial-header">
+                <h2 class="trending-title">មតិយោបលពីភ្ញៀវរបស់ពួកយើង</h2>
+                <p class="trending-subtitle">បទពិសោធន៍ពិតៗ​ពីភ្ញៀវរបស់យើង</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "ខ្ញុំពិតជាចូលចិត្តគុណភាពសម្លៀកបំពាក់ពីហាងនេះ។
+                        រ៉ូបរដូវក្តៅដែលខ្ញុំបានទិញលើសពីការរំពឹងទុករបស់ខ្ញុំទាក់ទងនឹងសាច់ក្រណាត់ និងសម។
+                        ប្រាកដជានឹងមកទិញទំនិញនៅទីនេះម្តងទៀត!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-image-wrapper">
+                            <img src="assets/img/profile/pf-1.jpg" alt="Rebecca Anderson" class="author-image" />
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Christaino
+                                Ronaldo</h4>
+                            <p class="author-role">ភ្ញៀវVVIP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "សេវាកម្មអតិថិជននៅទីនេះគឺពូកែណាស់។ ខ្ញុំមានបញ្ហាជាមួយទំហំ
+                        ហើយពួកគេពិតជាមានប្រយោជន៍ក្នុងការស្វែងរកសមត្រឹមត្រូវ។
+                        អាវក្រណាត់ដែលខ្ញុំបានទិញឥឡូវនេះគឺជារបស់ដែលខ្ញុំចូលចិត្តបំផុតសម្រាប់រដូវក្តៅ!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-image-wrapper">
+                            <img src="assets/img/profile/pf-2.jpg" alt="Michael Thompson" class="author-image" />
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Lionel Messi</h4>
+                            <p class="author-role">ភ្ញៀវកាន់ឆ្នាំ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star half-filled">&#9733;</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "ខ្ញុំចាប់អារម្មណ៍នឹងការប្រមូលផ្ដុំប្រកបដោយនិរន្តរភាព។
+                        មិនត្រឹមតែសំលៀកបំពាក់ទាន់សម័យប៉ុណ្ណោះទេ
+                        ប៉ុន្តែការដឹងថាវាត្រូវបានផលិតឡើងដោយវត្ថុធាតុដើមដែលមិនប៉ះពាល់ដល់បរិស្ថាន
+                        ធ្វើឱ្យខ្ញុំមានអារម្មណ៍ល្អចំពោះការទិញរបស់ខ្ញុំ។ គុណភាពគឺពិសេស!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-image-wrapper">
+                            <img src="assets/img/profile/pf-3.jpg" alt="Olivia Martinez" class="author-image" />
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Neymar JR</h4>
+                            <p class="author-role">ភ្ញៀវថ្មី</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="insta-section">
+        <div class="insta-container">
+            <div class="insta-header">
+                <h2 class="insta-title">តាមដានពួកយើង</h2>
+                <p class="insta-subtitle">
+                    តាមដានពួកយើងតាមរយ: Instagram
+                    <a><span class="insta-handle">@sakalex26_store</span></a>
+                </p>
+            </div>
+            <div class="insta-grid">
+                <a class="insta-item">
+                    <img src="assets/img/style-img/style-1.jpg" alt="Instagram Post" class="insta-image" />
+                    <div class="insta-overlay">
+                        <div class="insta-likes">
+                            <span class="heart-icon">❤</span>
+                            <span class="likes-count">142</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="insta-item">
+                    <img src="assets/img/style-img/style-2.jpg" alt="Instagram Post" class="insta-image" />
+                    <div class="insta-overlay">
+                        <div class="insta-likes">
+                            <span class="heart-icon">❤</span>
+                            <span class="likes-count">236</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="insta-item">
+                    <img src="assets/img/style-img/style-3.jpg" alt="Instagram Post" class="insta-image" />
+                    <div class="insta-overlay">
+                        <div class="insta-likes">
+                            <span class="heart-icon">❤</span>
+                            <span class="likes-count">189</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="insta-item">
+                    <img src="assets/img/style-img/style-4.jpg" alt="Instagram Post" class="insta-image" />
+                    <div class="insta-overlay">
+                        <div class="insta-likes">
+                            <span class="heart-icon">❤</span>
+                            <span class="likes-count">312</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="insta-item">
+                    <img src="assets/img/style-img/style-5.jpg" alt="Instagram Post" class="insta-image" />
+                    <div class="insta-overlay">
+                        <div class="insta-likes">
+                            <span class="heart-icon">❤</span>
+                            <span class="likes-count">278</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="insta-item">
+                    <img src="assets/img/style-img/style-6.jpg" alt="Instagram Post" class="insta-image" />
+                    <div class="insta-overlay">
+                        <div class="insta-likes">
+                            <span class="heart-icon">❤</span>
+                            <span class="likes-count">205</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">ផ្តល់មតិកែលម្អសម្រាប់ពួកយើង</h2>
+                <p class="newsletter-description">
+                    អតិថិជនអាចនិយាយអ្វីទៅកាន់ហាងដើម្បីដោះស្រាយបញ្ហាណាមួយ
+                </p>
+                <form class="newsletter-form">
+                    <input type="text" placeholder="បញ្ចេញមតិរបស់អ្នក" class="newsletter-input" />
+                </form>
+                <button id="popupBtn">ដាក់បញ្ជូន</button>
+
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <img src="assets/img/logo_web.png" alt="" width="70px">
+                        <h1>សូមអរគុណចំពោះមតិកែលម្អរបស់អ្នក</h1>
+                        <p>យើងសូមកោតសរសើរចំពោះដំណើរទស្សនកិច្ចរបស់អ្នក។ មានបទពិសោធន៍ទិញទំនិញដ៏អស្ចារ្យ!</p>
+                    </div>
+                </div>
+                <p class="newsletter-terms">
+                    សូមអរគុណដែលបានគាំទ្រពួកយើង
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ចេញពីគណនី</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="bi bi-exclamation-triangle-fill"></i> តើអ្នកពិតជាចង់ចេញពីគណនីរបស់លោកអ្នកមែនទេ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                    <a href="indext.html" type="button" class="btn btn-primary">ចាកចេញ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-columns">
