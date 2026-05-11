@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You&Me Shop</title>
+    <link rel="icon" href="assets/img/logo-sak-img-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_sokmean.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dangrek&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exile&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo/logo-sak-img-removebg-preview.png" height="45">
+            </a>
+
+            <!-- Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="menu">
+
+                <!-- Center Menu -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">ដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">លក់</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">អំពីពួកយើង</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ទំនាក់ទំនង</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            រដូវកាល
+                        </a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="summer.html">រដូវក្ដៅ</a></li>
+                            <li><a class="dropdown-item" href="winter.html">រដូវរងារ</a></li>
+                            <li><a class="dropdown-item" href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Right -->
+                <div class="d-flex align-items-center gap-3">
+
+                    <!-- Search -->
+                    <div class="search-box">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="ស្វែងរក...">
+                    </div>
+
+                    <!-- Cart -->
+                    <a href="#" class="nav-icon cart-icon">
+                        <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
+                        <span class="cart-badge">3</span>
+                    </a>
+
+                    <!-- User -->
+                    <a href="#" class="nav-icon user-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <section class="hero-section-w">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="text-box">
+                <h1 class="hero-title">រដូវត្រជាក់ 2026</h1>
+                <div class="p">
+                    <p class="hero-description">
+                        ស្វែងយល់ពីនិន្នាការចុងក្រោយបំផុត
+                        និងលើកកំពស់រចនាបទរបស់អ្នកជាមួយនឹងការប្រមូលរដូវរងារផ្តាច់មុខរបស់យើង
+                        <br>ការផ្តល់ជូនពេលវេលាមានកំណត់។
+                    </p>
+                </div>
+            </div>
+            <div class="button-group">
+                <a class="btn btn-primary">ទិញឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+    <marquee class="mq-w" behavior="scroll" direction="left" loop="auto">
+        <h1>In the Winter We dicount 60% for you</h1>
+    </marquee>
+
+    <div class="container my-5">
+
+        <h3 class="mb-4">⚡ All Under $9.99 🛒</h3>
+
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="position-relative product-card">
+                    <span class="discount">-38%</span>
+                    <img src="assets/img/winter/5148d9SDwzL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $6.57 <span class="old-price">$10.59</span></p>
+                        <p class="mb-0">Sweater</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="position-relative product-card">
+                    <span class="discount">-38%</span>
+                    <img src="assets/img/winter/61A5eUs96pL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $6.57 <span class="old-price">$10.59</span></p>
+                        <p class="mb-0">Dress</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="position-relative product-card">
+                    <span class="discount">-38%</span>
+                    <img src="assets/img/winter/61lKSMizvNL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $6.57 <span class="old-price">$10.59</span></p>
+                        <p class="mb-0">Dress</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-3">
+                <div class="position-relative product-card">
+                    <span class="discount">-38%</span>
+                    <img src="assets/img/winter/61ULkbDJBnL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $6.57 <span class="old-price">$10.59</span></p>
+                        <p class="mb-0">Suit</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <!-- Product 5 (auto xuống dòng) -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/712kjuX8wOL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Coat</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/71DZDctGgjL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Suit</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/71O3T3uK8jL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Coat</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/71O3T3uK8jL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Coat</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/71TTqZ491TL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Coat</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/71uXoSvcxnL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Sweater</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/71zkzQ9ciCL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Coat</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/71yUVVHj9SL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Coat</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/71O3T3uK8jL._AC_UL480_FMwebp_QL65_.webp" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Coat</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/istockphoto-1333958850-612x612.jpg" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Clothes set</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/winter/istockphoto-1058036480-2048x2048.jpg" style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $5.00</p>
+                        <p class="mb-0">Clothes set</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+            <div class="view-all">
+                <a class="view-all-btn">មើលទំនិញទាំងអស់</a>
+            </div>
+
+        </div>
+        <!-- MODAL -->
+        <div class="modal fade" id="productModal">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Product Detail</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+
+                            <!-- Image -->
+                            <div class="col-6">
+                                <img src="assets/img/winter/5148d9SDwzL._AC_UL480_FMwebp_QL65_.webp" class="img-fluid">
+                            </div>
+
+                            <!-- Detail -->
+                            <div class="col-6 px-3 py-4">
+
+                                <h4 class="fs-5 mb-3 text-secondary">Size</h4>
+                                <div class="btn-group mb-3">
+                                    <button class="btn btn-outline-dark">S</button>
+                                    <button class="btn btn-outline-dark">M</button>
+                                    <button class="btn btn-outline-dark">L</button>
+                                    <button class="btn btn-outline-dark">XL</button>
+                                    <button class="btn btn-outline-dark">XXL</button>
+                                </div>
+
+                                <h4 class="fs-5 mb-3 text-secondary">Color</h4>
+                                <div class="d-flex gap-3 mb-3">
+                                    <button class="rounded-circle p-3 bg-danger border-0"></button>
+                                    <button class="rounded-circle p-3 bg-primary border-0"></button>
+                                    <button class="rounded-circle p-3 bg-success border-0"></button>
+                                    <button class="rounded-circle p-3 bg-warning border-0"></button>
+                                </div>
+
+                                <h4 class="fs-5 mb-3 text-secondary">Quantity</h4>
+                                <div class="btn-group mb-4">
+                                    <button class="btn btn-outline-secondary" onclick="changeQty(-1)">-</button>
+                                    <button class="btn btn-outline-dark" id="qty">1</button>
+                                    <button class="btn btn-outline-secondary" onclick="changeQty(1)">+</button>
+                                </div>
+
+                                <button class="btn btn-dark w-100">
+                                    ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.querySelectorAll('.favorite').forEach(icon => {
+            icon.onclick = function () {
+                this.classList.toggle('active');
+                this.classList.toggle('fa-solid');
+                this.classList.toggle('fa-regular');
+            }
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-brand">
+                    <a class="footer-logo">
+                        <img src="assets/img/logo/logo-sak-img-removebg-preview.png" alt width="140px">
+                    </a>
+                    <div class="footer-socials">
+                        <a><i class="ri-facebook-fill"></i></a>
+                        <a><i class="ri-instagram-fill"></i></a>
+                        <a><i class="ri-twitter-x-fill"></i></a>
+                        <a><i class="ri-pinterest-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ហាង</h3>
+                    <ul>
+                        <li><a href="women_chakriya.html">នារី</a></li>
+                        <li><a href="men_chakriya.html">បុរស</a></li>
+                        <li><a href="accessories_chakriya.html">សម្ភារ:</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ក្រុមហ៊ុន</h3>
+                    <ul>
+                        <li><a href="about_us_sak.html">អំពីពួកយើង</a></li>
+                        <li><a href="contact_us_sak.html">ទំនាក់ទំនង</a></li>
+                        <li><a href="location_sak.html">ទីតាំង</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            let navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("navbar-scrolled", window.scrollY > 50);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,19 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     color: #fff;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.card{
+
+.card {
     width: 400px;
     height: 450px;
     margin: 70px 70px;
@@ -23,7 +20,9 @@ body{
     border-radius: 10px;
     position: relative;
 }
-.card::after, .card::before{
+
+.card::after,
+.card::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -38,24 +37,29 @@ body{
     background-image: conic-gradient(from var(--angle), #0fbcf9, transparent, #0fbcf9, transparent, #0fbcf9);
     animation: 7s animate linear infinite;
 }
-.card::before{
+
+.card::before {
     filter: blur(1rem);
     opacity: 0.3;
 }
+
 @keyframes animate {
-    from{
-        --angle:0deg;
+    from {
+        --angle: 0deg;
     }
+
     to {
         --angle: 360deg;
     }
 }
-@property --angle{
+
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
-.login-form{
+
+.login-form {
     /* border: 1px solid red; */
     position: absolute;
     top: 50%;
@@ -66,16 +70,19 @@ body{
     box-sizing: border-box;
     padding: 40px;
 }
-.login-form h1{
+
+.login-form h1 {
     margin: 0 0 30px;
     color: #0fbcf9;
     text-align: center;
 }
-.login-form .user-input{
+
+.login-form .user-input {
     position: relative;
 
 }
-.login-form .user-input .user{
+
+.login-form .user-input .user {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -86,14 +93,16 @@ body{
     background-color: transparent;
     outline: none;
 }
-.login-form .user-input i{
+
+.login-form .user-input i {
     position: absolute;
     right: 5px;
     top: 10px;
     font-size: 20px;
     color: #ccc;
 }
-.login-form .user-input label{
+
+.login-form .user-input label {
     position: absolute;
     top: 0;
     left: 0;
@@ -103,14 +112,16 @@ body{
     pointer-events: none;
     transition: .5s ease;
 }
-.login-form .user-input .user:focus ~  label,
-.login-form .user-input .user:valid ~ label{
-   top: -15px;
-   left: 0;
-   font-size: 13px;
-    
+
+.login-form .user-input .user:focus~label,
+.login-form .user-input .user:valid~label {
+    top: -15px;
+    left: 0;
+    font-size: 13px;
+
 }
-.login-form form .send{
+
+.login-form form .send {
     margin: 0 auto;
     display: inline-block;
     position: relative;
@@ -127,37 +138,67 @@ body{
     border: 2px solid #0fbcf9;
     transition: 0.5s ease;
 }
-.login-form form .send:hover{
+
+.login-form form .send:hover {
     background-color: transparent;
     color: #ccc;
 }
-.remember-forget{
+
+.remember-forget {
     color: #171717;
     text-decoration: none;
     margin-left: 30px;
     font-size: 16px;
 
 }
-.forget{
+
+.forget {
     color: #171717;
     text-decoration: none;
     margin-left: 30px;
     font-size: 16px;
 }
-.forget:hover{
+
+.forget:hover {
     text-decoration: underline;
 }
-.register{
+
+.register {
     margin: 20px;
     color: #171717;
     text-align: center;
     font-size: 16px;
 }
-.register-text{
+
+.register-text {
     font-weight: bold;
     color: #171717;
     text-decoration: none;
 }
-.register-text:hover{
+
+.register-text:hover {
     text-decoration: underline;
+}
+
+.logo {
+    width: 250px !important;
+    height: 250px !important;
+}
+
+.otp-input {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    background-color: #f1f3f5;
+}
+
+.back{
+    position: absolute;
+    top: 10px;
+    left: 20px;
 }
