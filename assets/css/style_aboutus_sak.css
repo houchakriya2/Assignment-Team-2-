@@ -43,10 +43,7 @@
     /* background-color: #1f2937; */
     border-radius: 10px;
 }
-.row{
-    display: flex;
-    gap: 20px;
-}
+
 .box-1 h1{
     color: red;
     font-weight: bolder;
