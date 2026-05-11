@@ -1,0 +1,69 @@
+.settings-title {
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.section-label {
+    color: #a04050;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.border-top-dashed {
+    border-top: 1px dashed #e0e0e0;
+}
+
+/* Help Item Interactive Styles */
+.help-item {
+    color: var(--text-main);
+    transition: all 0.2s ease;
+}
+
+.help-item:hover {
+    background-color: #fdf8f9;
+    padding-left: 10px !important;
+}
+
+.help-item:hover .arrow-icon {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.arrow-icon {
+    font-size: 1.2rem;
+    color: #ccc;
+    transition: all 0.2s ease;
+}
+
+/* Search Bar Styling */
+.search-wrapper input {
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding-left: 15px;
+    width: 250px;
+}
+
+.search-wrapper input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(136, 14, 79, 0.1);
+}
+
+/* Contact Button Styling */
+.btn-contact {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-contact:hover {
+    background-color: #6a0b3d;
+    color: white;
+}
+
+.card {
+    border-radius: 12px;
+}

@@ -1,0 +1,52 @@
+body {
+    background: #f6f7fb;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.title {
+    color: #2d2d2d;
+    font-weight: 600;
+}
+
+/* Card */
+.form-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+/* Calendar icon box */
+.input-group-text {
+    background: white;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Alert text */
+.alert-text {
+    padding: 10px 14px;
+    background: #f3f4f6;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* Button */
+.btn-save {
+    background: #8b1455;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-save:hover {
+    background: #6f1043;
+    color: white;
+}

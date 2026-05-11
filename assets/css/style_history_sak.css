@@ -1,0 +1,153 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f6f8;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #eee;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  background: #8a0f4d;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.menu-item {
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.menu-item.active {
+  background: #8a0f4d;
+  color: #fff;
+}
+
+.menu-item:hover {
+  background: #f1f1f1;
+}
+
+.menu-item.active:hover {
+  background: #8a0f4d;
+}
+
+/* Content */
+.content {
+  background: #f8f9fb;
+  border-radius: 12px;
+}
+
+/* Top buttons */
+.filter-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  background: #f1f3f5;
+}
+
+/* Card */
+.card-orders {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Table spacing */
+.table td, .table th {
+  padding: 14px 12px;
+  vertical-align: middle;
+}
+
+/* Status badges */
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status.inprogress {
+  background: #fff4e5;
+  color: #f59e0b;
+}
+
+.status.delivered {
+  background: #e6f9f0;
+  color: #10b981;
+}
+
+.status.canceled {
+  background: #ffe6e6;
+  color: #ef4444;
+}
+
+/* Product images row */
+.product-row td {
+  padding-top: 0;
+}
+
+.products {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.products img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.products img:hover {
+  transform: scale(1.05);
+}
+
+td{
+  padding-left: 110px !important;
+}
+.top-x{
+  margin-top: 35px !important;
+}
+.product-card{
+  width: 300px !important;
+
+}
+.text-fi{
+  color: black;
+  text-decoration: none;
+  
+}
+

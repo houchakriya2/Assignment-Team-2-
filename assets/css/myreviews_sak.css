@@ -1,0 +1,18 @@
+.review-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eee;
+}
+
+.review-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+.stars i {
+    color: #f5a623;
+    font-size: 18px;
+}
