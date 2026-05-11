@@ -1,167 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Edit Profile</title>
+<link rel="stylesheet" href="assets/css/style_chakriya.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Edit Profile</title>
-    <link rel="stylesheet" href="assets/css/style_chakriya.css">
+<style>
+body{
+    background:#f5f7fb;
+    font-family:"Segoe UI", sans-serif;
+    color:#202124;
+}
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+/* Layout container */
+.wrapper{
+    max-width:900px;
+    margin:60px auto;
+}
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+/* Card style */
+.card-box{
+    background:white;
+    border-radius:18px;
+    border:1px solid #e0e0e0;
+    box-shadow:0 1px 3px rgba(60,64,67,0.12);
+}
 
-    <style>
+/* Profile preview side */
+.profile-side{
+    text-align:center;
+    padding:30px 20px;
+    border-right:1px solid #eee;
+}
 
-        body{
-            background: linear-gradient(to right,#eef2ff,#f8f9ff);
-            min-height: 100vh;
-            display:flex;
-            align-items:center;
-        }
+.profile-side img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #e8f0fe;
+    margin-bottom:15px;
+}
 
-        .edit-card{
-            border:none;
-            border-radius:30px;
-        }
+.profile-side h5{
+    margin-bottom:3px;
+}
 
-        .form-control{
-            border-radius:14px;
-            padding:12px;
-        }
+.badge-custom{
+    background:#e8f0fe;
+    color:#1a73e8;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
 
-        .btn-custom{
-            border-radius:12px;
-            padding:10px 25px;
-        }
+/* Form section */
+.form-section{
+    padding:30px;
+}
 
-        .profile-img{
-            width:120px;
-            height:120px;
-            border-radius:50%;
-            object-fit:cover;
-            border:5px solid #fff;
-            box-shadow:0 5px 20px rgba(0,0,0,0.1);
-        }
+.section-title{
+    font-size:14px;
+    font-weight:600;
+    color:#5f6368;
+    margin-bottom:15px;
+    margin-top:10px;
+}
 
-    </style>
+/* Inputs */
+.form-control{
+    border-radius:12px;
+    border:1px solid #dadce0;
+    padding:10px 12px;
+    font-size:14px;
+}
 
+.form-control:focus{
+    border-color:#1a73e8;
+    box-shadow:none;
+}
+
+/* Buttons */
+.btn-primary{
+    background:#1a73e8;
+    border:none;
+    border-radius:12px;
+}
+
+.btn-primary:hover{
+    background:#1557b0;
+}
+
+.btn-light{
+    border-radius:12px;
+}
+
+/* Layout split */
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+    .profile-side{
+        border-right:none;
+        border-bottom:1px solid #eee;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="wrapper card-box">
 
-    <div class="row justify-content-center">
+    <div class="grid">
 
-        <div class="col-lg-7">
+        <!-- LEFT SIDE PROFILE PREVIEW -->
+        <div class="profile-side">
+            <img src="assets/img/people.png">
 
-            <div class="card shadow-lg edit-card">
+            <h5>សុខ​ តារា</h5>
+            <p class="text-muted mb-2">dara168@gmail.com</p>
 
-                <div class="card-body p-5">
+            <span class="badge-custom">Premium Member</span>
 
-                    <div class="text-center mb-4">
+            <hr>
 
-                        <img src="assets/img/people.png"
-                            class="profile-img">
+            <small class="text-muted">
+                Last updated: Today
+            </small>
+        </div>
 
-                        <h2 class="mt-3">
-                            កែប្រែ
-                        </h2>
+        <!-- RIGHT SIDE FORM -->
+        <div class="form-section">
 
-                    </div>
+            <h5 class="mb-3">កែប្រែព័ត៍មាន</h5>
 
-                    <form>
+            <!-- Personal Info -->
+            <div class="section-title">PERSONAL INFORMATION</div>
 
-                        <div class="row">
+            <div class="mb-3">
+                <label class="form-label">ឈ្មោះ</label>
+                <input type="text" class="form-control" value="Sok Dara">
+            </div>
 
-                            <div class="col-md-6 mb-3">
+            <!-- Contact -->
+            <div class="section-title">CONTACT DETAILS</div>
 
-                                <label class="form-label">
-                                    ឈ្មោះ
-                                </label>
+            <div class="mb-3">
+                <label class="form-label">អ៊ីមែល​</label>
+                <input type="email" class="form-control" value="dara@example.com">
+            </div>
 
-                                <input type="text"
-                                    class="form-control"
-                                    value="John Doe">
+            <div class="mb-3">
+                <label class="form-label">លេខទូរស័ព្ទ</label>
+                <input type="text" class="form-control" value="+855 12 345 678">
+            </div>
 
-                            </div>
+            <!-- Address -->
+            <div class="section-title">ទីកន្លែង</div>
 
-                            <div class="col-md-6 mb-3">
+            <div class="mb-3">
+                <textarea class="form-control" rows="3">Phnom Penh, Cambodia</textarea>
+            </div>
 
-                                <label class="form-label">
-                                    អ៊ីមែល​
-                                </label>
+            <!-- Buttons -->
+            <div class="d-flex gap-2 mt-4">
+                <button class="btn btn-primary w-100">
+                    រក្សាទុកនិងកែប្រែ
+                </button>
 
-                                <input type="email"
-                                    class="form-control"
-                                    value="johndoe@gmail.com">
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <label class="form-label">
-                                    លេខទូរស័ព្ទ
-                                </label>
-
-                                <input type="text"
-                                    class="form-control"
-                                    value="+855 12 345 678">
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <label class="form-label">
-                                    រូបភាព
-                                </label>
-
-                                <input type="file"
-                                    class="form-control">
-
-                            </div>
-
-                            <div class="col-12 mb-4">
-
-                                <label class="form-label">
-                                    ទីកន្លែងស្នាក់នៅ
-                                </label>
-
-                                <textarea class="form-control"
-                                    rows="4">Phnom Penh, Cambodia</textarea>
-
-                            </div>
-
-                        </div>
-
-                        <div class="text-center">
-
-                            <button class="btn btn-success btn-custom">
-
-                                <i class="bi bi-save"></i>
-                                រក្សាទុកនិងកែប្រែ
-
-                            </button>
-
-                            <a href="profile_me.html"
-                                class="btn btn-secondary btn-custom">
-
-                                ថយក្រោយ
-
-                            </a>
-
-                        </div>
-
-                    </form>
-
-                </div>
-
+                <a href="indext.html" class="btn btn-light w-100">
+                    បោះបង់
+                </a>
             </div>
 
         </div>
