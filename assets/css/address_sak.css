@@ -1,0 +1,87 @@
+.page-title {
+            color: #331021;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        .btn-add {
+            background-color: #800040;
+            color: white;
+            border-radius: 8px;
+            padding: 10px 20px;
+            border: none;
+            font-weight: 500;
+        }
+
+        .btn-add:hover {
+            background-color: #600030;
+            color: white;
+        }
+
+        /* Card Styles */
+        .address-card {
+            background: white;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            max-width: 800px;
+            padding: 25px;
+            position: relative;
+        }
+
+        .address-label {
+            color: #331021;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .address-details {
+            color: #4a4a4a;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Action Buttons */
+        .action-icons {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+        }
+
+        .icon-btn {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .icon-edit {
+            background-color: #f2f2f2;
+            color: #555;
+        }
+
+        .icon-delete {
+            background-color: #fff1f1;
+            color: #d9534f;
+        }
+
+        .icon-btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Default Badge */
+        .badge-default {
+            background-color: #e8f2ff;
+            color: #405189;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+        }

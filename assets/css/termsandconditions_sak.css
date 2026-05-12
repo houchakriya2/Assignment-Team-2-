@@ -1,0 +1,41 @@
+.settings-title {
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.section-label {
+    color: #a04050;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.border-top-dashed {
+    border-top: 1px dashed #e0e0e0;
+}
+
+.lh-lg {
+    line-height: 1.8; /* Improves readability for long legal text */
+}
+
+.btn-save {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-save:hover {
+    background-color: #6a0b3d;
+    color: white;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.italic {
+    font-style: italic;
+}
