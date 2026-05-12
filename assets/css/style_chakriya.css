@@ -217,6 +217,8 @@ textarea.field {
     transform: scale(1.1);
 }
 .footer {
+  position: relative;
+  z-index: 101;
   background-color: #111827;
   color: white;
   padding: 64px 0 32px;
@@ -366,4 +368,16 @@ textarea.field {
     position: absolute;
     top: 10px;
     left: 20px;
+}
+.logout-icon{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#fff1f2;
+    color:#dc3545;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-weight:bold;
 }
