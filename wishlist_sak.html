@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/style_aboutus_sak.css">
     <link rel="stylesheet" href="assets/css/style_history_sak.css">
     <link rel="stylesheet" href="assets/css/style_wishlist.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Dangrek&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -135,10 +135,7 @@
                         <a class="text-black text-decoration-none" class="text-black text-decoration-none" href="myreviews_sak.html">My
                             reviews</a>
                     </div>
-                    <div class="menu-item">
-                        <i class="bi bi-person"></i>
-                        <a class="text-black text-decoration-none" href="personalinfo_sak.html">Personal info</a>
-                    </div>
+
                     <div class="menu-item">
                         <i class="bi bi-geo-alt"></i>
                         <a class="text-black text-decoration-none" href="address_sak.html">Addresses</a>
@@ -289,44 +286,55 @@
 
     </div>
     </div>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-brand">
+                    <a class="footer-logo">
+                        <img src="assets/img/logo-sak-img-removebg-preview.png" alt width="140px">
+                    </a>
+                    <div class="footer-socials">
+                        <a><i class="ri-facebook-fill"></i></a>
+                        <a><i class="ri-instagram-fill"></i></a>
+                        <a><i class="ri-twitter-x-fill"></i></a>
+                        <a><i class="ri-pinterest-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ហាង</h3>
+                    <ul>
+                        <li><a href="women_chakriya.html">នារី</a></li>
+                        <li><a href="men_chakriya.html">បុរស</a></li>
+                        <li><a href="accessories_chakriya.html">សម្ភារ:</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ក្រុមហ៊ុន</h3>
+                    <ul>
+                        <li><a href="about_us_sak.html">អំពីពួកយើង</a></li>
+                        <li><a href="contact_us_sak.html">ទំនាក់ទំនង</a></li>
+                        <li><a href="location_sak.html">ទីតាំង</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) { // Adjust this value based on when you want the color to change
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 
 
 </body>
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-columns">
-            <div class="footer-brand">
-                <a class="footer-logo">
-                    <img src="assets/img/Gemini_Generated_Image_y5d4kzy5d4kzy5d4-removebg-preview.png" alt
-                        width="140px">
-                </a>
-                <div class="footer-socials">
-                    <a><i class="ri-facebook-fill"></i></a>
-                    <a><i class="ri-instagram-fill"></i></a>
-                    <a><i class="ri-twitter-x-fill"></i></a>
-                    <a><i class="ri-pinterest-fill"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-links">
-                <h3>ហាង</h3>
-                <ul>
-                    <li><a href="women_chakriya.html">នារី</a></li>
-                    <li><a href="men_chakriya.html">បុរស</a></li>
-                    <li><a href="accessories_chakriya.html">សម្ភារ:</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h3>ក្រុមហ៊ុន</h3>
-                <ul>
-                    <li><a href="about_us_sak.html">អំពីពួកយើង</a></li>
-                    <li><a href="contact_us_sak.html">ទំនាក់ទំនង</a></li>
-                    <li><a href="location_sak.html">ទីតាំង</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
 
 </html>
