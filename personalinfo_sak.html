@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You&Me Shop</title>
+    <title>Personal</title>
     <link rel="icon" href="assets/img/logo-sak-img-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style_chakriya.css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style_paymentmethod_sak.css">
     <link rel="stylesheet" href="assets/css/myreviews_sak.css">
     <link rel="stylesheet" href="assets/css/personalinfo_sak.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Dangrek&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -33,7 +33,7 @@
 
 <body>
 
-    <nav id="navbar" class="navbar navbar-expand-lg bg-primary sticky-top">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
         <div class="container">
             <a href class="navbar-brand">
                 <img src="assets/img/logo-sak-img-removebg-preview.png" alt class="logo" width="80px">
@@ -44,9 +44,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class=" navbar-nav  m-auto mb-2 mb-lg-0 gap-3">
+                <ul class=" navbar-nav  m-auto mb-2  gap-3">
                     <li class="nav-item">
-                        <a href="indext.html" class="nav-link hover-underline"><i class="bi bi-house-door"></i>
+                        <a href="account_me.html" class="nav-link hover-underline"><i class="bi bi-house-door"></i>
                             ទំព័រដើម</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,17 +55,19 @@
                             <i class="bi bi-bag-fill"></i> ទំនិញ
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">បុរស</a></li>
-                            <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">នារី</a></li>
-                            <li><a class="dropdown-item hover-text rounded-2" href="#">សម្ភារៈ</a></li>
+                            <li><a class="dropdown-item hover-text rounded-2 mb-3" href="men.html">បុរស</a>
+                            </li>
+                            <li><a class="dropdown-item hover-text rounded-2 mb-3" href="women.html">នារី</a>
+                            </li>
+                            <li><a class="dropdown-item hover-text rounded-2" href="accessories.html">សម្ភារៈ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="about_us_sak.html" class="nav-link hover-underline"><i class="bi bi-people-fill"></i>
+                        <a href="about_us.html" class="nav-link hover-underline"><i class="bi bi-people-fill"></i>
                             អំពីពួកយើង</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact_us_sak.html" class="nav-link hover-underline"><i class="bi bi-telephone"></i>
+                        <a href="contact_us.html" class="nav-link hover-underline"><i class="bi bi-telephone"></i>
                             ទំនាក់ទំនង</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -74,216 +76,267 @@
                             <i class="bi bi-fire"></i> រដូវកាល
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item hover-text rounded-2 mb-3 " href="#">រដូវក្ដៅ</a></li>
-                            <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">រដូវត្រជាក់</a></li>
-                            <li><a class="dropdown-item hover-text rounded-2" href="#">ចូលឆ្នាំខ្មែរ</a></li>
+                            <li><a class="dropdown-item hover-text rounded-2 mb-3 " href="summer.html">រដូវក្ដៅ</a></li>
+                            <li><a class="dropdown-item hover-text rounded-2 mb-3" href="winter.html">រដូវត្រជាក់</a>
+                            </li>
+                            <li><a class="dropdown-item hover-text rounded-2"
+                                    href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
                         </ul>
                     </li>
                 </ul>
-                <div class=" d-flex gap-3 buttn">
-                    <a href="addtocard_roeun.html" class=" btn btn-outline-warning rounded-pill fs-6 px-3"><i
+                <div class=" buttn">
+                    <a href="addtocard.html" class=" btn btn-outline-warning rounded-pill fs-6 p-btn"><i
                             class="bi bi-cart-plus"></i> កន្រ្តក</a>
-                    <a href="login_nit.html" class="btn fs-6 btn-outline-warning rounded-pill px-3"><i
-                            class="fa-solid fa-user-plus icon"></i> ចូលគណនី</a>
-                    <a href="login_nit.html" class="btn fs-6 btn-outline-warning rounded-pill px-3"><i
-                            class="fa-solid fa-sliders"></i> ប្រវត្តិការទិញ</a>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <a href="" class="btn btn-outline-warning rounded-pill p-btn1">
+                                <img class=" me" src="assets/img/people.png" alt=""> <i class="bi bi-caret-down"></i>
+                            </a>
+
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="profile_me.html"><i class="bi bi-person-square"></i>
+                                    មើលគណនី</a></li>
+                            <li><a class="dropdown-item" href="history_sak.html"> <i class="bi bi-clock-history"></i>
+                                    ប្រវត្តិការទិញ</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#logoutModal"><i class="bi bi-box-arrow-right"></i> ចេញពីគណនី</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
 
+    <!-- MAIN -->
 
-    <div class="container-fluid my-5">
-        <div class="row">
+    <section class="main-section">
 
-            <!-- Sidebar -->
-            <div class="col-lg-3">
-                <div>
-                    <div class="d-flex gap-3 my-3 ">
-                        <div class="avatar">S</div>
-                        <div class="align-content-center"><strong>សំ​ តារាសក្តិ</strong></div>
-                    </div>
+        <div class="container">
 
-                    <div class="menu-item active">
-                        <i class="bi bi-box"></i>
-                        <a class="text-light text-decoration-none" href="history_sak.html">ការបញ្ជាទិញ</a>
-                    </div>
-                    <div class="menu-item">
-                        <i class="bi bi-heart"></i>
-                        <a class="text-black text-decoration-none" href="wishlist_sak.html">បញ្ជីបំណងចង់បាន</a>
-                    </div>
-                    <div class="menu-item">
-                        <i class="bi bi-credit-card"></i>
-                        <a class="text-black text-decoration-none" href="paymentmethod_sak.html">វិធីសាស្ត្រទូទាត់ប្រាក់</a>
-                    </div>
-                    <div class="menu-item">
-                        <i class="bi bi-star"></i>
-                        <a class="text-black text-decoration-none" class="text-black text-decoration-none"
-                            href="myreviews_sak.html">
-                            ការវាយតម្លៃរបស់ខ្ញុំ</a>
-                    </div>
-                    <div class="menu-item">
-                        <i class="bi bi-person"></i>
-                        <a class="text-black text-decoration-none" href="personalinfo_sak.html">ព័ត៌មានផ្ទាល់ខ្លួន</a>
-                    </div>
-                    <div class="menu-item">
-                        <i class="bi bi-geo-alt"></i>
-                        <a class="text-black text-decoration-none" href="address_sak.html">អាស័យដ្ឋាន</a>
-                    </div>
-                    <div class="menu-item">
-                        <i class="bi bi-bell"></i>
-                        <a class="text-black text-decoration-none" href="notifications_sak.html">ការជូនដំណឹង</a>
-                    </div>
+            <div class="row g-4">
 
-                    <hr>
+                <!-- SIDEBAR -->
 
-                    <small class="text-muted">CUSTOMER SERVICE</small>
+                <div class="col-lg-3">
 
-                    <div class="menu-item">
-                        <i class="bi bi-question-circle"></i>
-                        <a class="text-black text-decoration-none" href="helpcenter_sak.html">កន្លែងផ្តល់ជំនួយ</a>
-                    </div>
-                    <div class="menu-item">
-                        <i class="bi bi-file-text"></i>
-                        <a class="text-black text-decoration-none" href="termsandconditions_sak.html">
-                            លក្ខខណ្ឌប្រើប្រាស់</a>
-                    </div>
-                    <div class="menu-item text-danger">
-                        <i class="bi bi-box-arrow-right"></i>
-                        <a class="text-danger text-decoration-none " href="login_nit.html">ចាកចេញ</a>
+                    <div class="sidebar text-center">
+
+                        <img src="assets/img/people.png"
+                            class="profile-img">
+
+                        <h4 class="profile-name">
+                            Sok Dara
+                        </h4>
+
+                        <p class="profile-email">
+                            sokdara9999@gmail.com
+                        </p>
+                        <span class="badge-custom">Premium Member</span>
+
+                        <hr>
+
+                        <button class="menu-btn menu-active">
+                            <i class="bi bi-person-fill me-2"></i>
+                            ប្រវត្តិរបស់ខ្ញុំ
+                        </button>
+
+                        <button class="menu-btn">
+                            <i class="bi bi-cart-fill me-2"></i>
+                            ប្រវត្តិការទិញ
+                        </button>
+
+                        <button class="menu-btn">
+                            <i class="bi bi-bell-fill me-2"></i>
+                            ដំណឹង
+                        </button>
+
+                        <button class="menu-btn">
+                            <i class="bi bi-gear-fill me-2"></i>
+                            ការកំណត់
+                        </button>
+
+                        <button class="menu-btn text-danger">
+                            <i class="bi bi-box-arrow-right me-2"></i>
+                            ចាកចេញពីគណនី
+                        </button>
+
                     </div>
 
                 </div>
-            </div>
 
-            <!-- Content -->
-            <div class="col-lg-9">
-                <h3 class="mb-4 title">ព័ត៌មានផ្ទាល់ខ្លួន</h3>
+                <!-- CONTENT -->
 
-                <div class=" form-card p-4">
+                <div class="col-lg-9">
 
-                    <div class="row g-3">
+                    <div class="content-box">
 
-                        <!-- First Name -->
-                        <div class="col-md-6">
-                            <label class="form-label">នាមខ្លួន</label>
-                            <input type="text" class="form-control" value="តារាសក្តិ">
-                        </div>
+                        <!-- TITLE -->
 
-                        <!-- Last Name -->
-                        <div class="col-md-6">
-                            <label class="form-label">នាមត្រកូល</label>
-                            <input type="text" class="form-control" value="សំ">
-                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
 
-                        <!-- Email -->
-                        <div class="col-md-6">
-                            <label class="form-label">អុីម៉ែល</label>
-                            <input type="email" class="form-control" value="darasaksam@gmail.com">
-                        </div>
+                            <div>
 
-                        <!-- Phone -->
-                        <div class="col-md-6">
-                            <label class="form-label">លេខទូរស័ព្ទ</label>
-                            <input type="text" class="form-control" value="0965488584">
-                        </div>
+                                <h2 class="page-title">
+                                    ព័ត៌មានផ្ទាល់ខ្លួន
+                                </h2>
 
-                        <!-- Date of Birth -->
-                        <div class="col-12">
-                            <label class="form-label">ថ្ងៃខែឆ្នាំកំណេីត</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" value="01/01/2000">
-                                <span class="input-group-text">
-                                    <i class="bi bi-calendar"></i>
-                                </span>
+                                <p class="text-muted">
+                                    កែប្រែព័ត៌មានផ្ទាល់ខ្លួន
+                                </p>
+
                             </div>
+
+                            <a href="edit_profile.html" class="edit-btn">
+                                <i class="bi bi-pencil-square me-2"></i>
+                                កែប្រែព័ត៌មាន
+                            </a>
+
                         </div>
 
-                        <!-- Gender -->
-                        <div class="col-12">
-                            <label class="form-label">ភេទ</label>
-                            <div class="d-flex gap-4 mt-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gender">
-                                    <label class="form-check-label">ប្រុស</label>
+                        <!-- IMAGE -->
+
+                        <div class="upload-box">
+
+                            <img src="assets/img/people.png">
+
+                            <div class="camera-btn">
+                                <i class="bi bi-camera-fill"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- FORM -->
+
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-4">
+
+                                    <label class="form-label">
+                                        នាមត្រកូល
+                                    </label>
+
+                                    <input type="text" class="form-control" value="Sal">
+
                                 </div>
 
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gender" checked>
-                                    <label class="form-check-label">ស្រី</label>
+                                <div class="col-md-6 mb-4">
+
+                                    <label class="form-label">
+                                        នាមខ្លួន
+                                    </label>
+
+                                    <input type="text" class="form-control" value="Sokheng">
+
                                 </div>
 
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gender">
-                                    <label class="form-check-label">ផ្សេងៗ</label>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-4">
+
+                                    <label class="form-label">
+                                        អ៊ីមែល
+                                    </label>
+
+                                    <input type="email" class="form-control" value="sallsokheng@gmail.com">
+
                                 </div>
-                            </div>
-                        </div>
 
-                        <!-- Message -->
-                        <div class="col-12">
-                            <div class="alert-text">
-                                <div class="fw-semibold">កំពុងដំណេីការ</div>
-                                <div>ព័ត៌មានរបស់អ្នកត្រូវបានកែប្រែបានដោយជោគជ័យ។ សូមអរគុណ!</div>
-                            </div>
-                        </div>
+                                <div class="col-md-6 mb-4">
 
-                        <!-- Button -->
-                        <div class="col-12 d-flex justify-content-end">
-                            <button class="btn btn-save px-4 py-2 btn-danger">
-                                រក្សាទុក
-                            </button>
-                        </div>
+                                    <label class="form-label">
+                                        លេខទូរស័ព្ទ
+                                    </label>
+
+                                    <input type="text" class="form-control" value="+885 12 345 678">
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    អាស័យដ្ឋាន
+                                </label>
+
+                                <textarea class="form-control">86B Street 313, Phnom Penh, Cambodia</textarea>
+
+                            </div>
+
+                            <!-- <button class="save-btn">
+                                <i class="bi bi-check-circle-fill me-2"></i>
+                                រក្សាទុកការផ្លាស់ប្តូរ
+                            </button> -->
+
+                        </form>
 
                     </div>
 
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-brand">
+                    <a class="footer-logo">
+                        <img src="assets/img/logo-sak-img-removebg-preview.png" alt width="140px">
+                    </a>
+                    <div class="footer-socials">
+                        <a><i class="ri-facebook-fill"></i></a>
+                        <a><i class="ri-instagram-fill"></i></a>
+                        <a><i class="ri-twitter-x-fill"></i></a>
+                        <a><i class="ri-pinterest-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ហាង</h3>
+                    <ul>
+                        <li><a href="women.html">នារី</a></li>
+                        <li><a href="men.html">បុរស</a></li>
+                        <li><a href="accessories.html">សម្ភារ:</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ក្រុមហ៊ុន</h3>
+                    <ul>
+                        <li><a href="about_us.html">អំពីពួកយើង</a></li>
+                        <li><a href="contact_us.html">ទំនាក់ទំនង</a></li>
+                        <li><a href="location.html">ទីតាំង</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    </div>
-    </div>
-
-    <!-- === -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) { // Adjust this value based on when you want the color to change
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-columns">
-            <div class="footer-brand">
-                <a class="footer-logo">
-                    <img src="assets/img/Gemini_Generated_Image_y5d4kzy5d4kzy5d4-removebg-preview.png" alt
-                        width="140px">
-                </a>
-                <div class="footer-socials">
-                    <a><i class="ri-facebook-fill"></i></a>
-                    <a><i class="ri-instagram-fill"></i></a>
-                    <a><i class="ri-twitter-x-fill"></i></a>
-                    <a><i class="ri-pinterest-fill"></i></a>
-                </div>
-            </div>
 
-            <div class="footer-links">
-                <h3>ហាង</h3>
-                <ul>
-                    <li><a href="women_chakriya.html">នារី</a></li>
-                    <li><a href="men_chakriya.html">បុរស</a></li>
-                    <li><a href="accessories_chakriya.html">សម្ភារ:</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h3>ក្រុមហ៊ុន</h3>
-                <ul>
-                    <li><a href="about_us_sak.html">អំពីពួកយើង</a></li>
-                    <li><a href="contact_us_sak.html">ទំនាក់ទំនង</a></li>
-                    <li><a href="location_sak.html">ទីតាំង</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
 
 </html>
