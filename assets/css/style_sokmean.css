@@ -19,13 +19,13 @@ body {
 }
 
 /* Menu */
-.nav-link {
+/* .nav-link {
     font-weight: 500;
     margin: 0 10px;
     position: relative;
-}
+} */
 
-.nav-link::after {
+/* .nav-link::after {
     content: "";
     position: absolute;
     width: 0%;
@@ -34,7 +34,7 @@ body {
     left: 0;
     bottom: -5px;
     transition: 0.3s;
-}
+} */
 
 .nav-link:hover::after {
     width: 100%;
