@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  margin-top: 100px !important;
   background-color: azure;
 }
 
@@ -20,7 +21,7 @@ h2 {
   color: white;
   padding-top: 64px;
   padding-bottom: 32px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 /* Container */
