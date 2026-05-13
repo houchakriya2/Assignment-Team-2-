@@ -104,6 +104,57 @@
             border: 1px solid black;
             background: transparent;
         }
+                .success-header {
+            background: linear-gradient(135deg, #198754, #157347);
+        }
+
+        /* ICON */
+        .success-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            font-weight: bold;
+            color: #198754;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* DETAILS BOX */
+        .payment-details {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        /* MODAL ANIMATION */
+        .modal-content {
+            animation: popup .3s ease;
+        }
+
+        @keyframes popup {
+            from {
+                transform: translateY(20px) scale(.95);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+        }
     </style>
 
 </head>
@@ -133,9 +184,12 @@
                                 <i class="bi bi-bag-fill"></i> ទំនិញ
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="men_chakriya.html">បុរស</a></li>
-                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="women_chakriya.html">នារី</a></li>
-                                <li><a class="dropdown-item hover-text rounded-2" href="accessories_chakriya.html">សម្ភារៈ</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="men_chakriya.html">បុរស</a>
+                                </li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3"
+                                        href="women_chakriya.html">នារី</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2"
+                                        href="accessories_chakriya.html">សម្ភារៈ</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -152,9 +206,12 @@
                                 <i class="bi bi-fire"></i> រដូវកាល
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="summer.html">រដូវក្ដៅ</a></li>
-                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="winter.html">រដូវត្រជាក់</a></li>
-                                <li><a class="dropdown-item hover-text rounded-2" href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="summer.html">រដូវក្ដៅ</a>
+                                </li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3"
+                                        href="winter.html">រដូវត្រជាក់</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2"
+                                        href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -261,7 +318,8 @@
                         <span>$65</span>
                     </div>
 
-                    <button class="btn pay-btn">ទូទាត់ប្រាក់</button>
+                    <button class="btn pay-btn" data-bs-toggle="modal"
+                        data-bs-target="#paymentSuccessModal">ទូទាត់ប្រាក់</button>
 
                     <p class="text-muted text-center small mt-3">
                         Secure encrypted checkout
@@ -274,7 +332,7 @@
         </div>
 
     </div>
-        <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-columns">
                 <div class="footer-brand">
@@ -309,6 +367,74 @@
             </div>
         </div>
     </footer>
+    <!-- PROFESSIONAL PAYMENT SUCCESS MODAL -->
+
+    <div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg overflow-hidden">
+
+                <!-- TOP SECTION -->
+                <div class="success-header text-center text-white p-4">
+
+                    <div class="success-icon mx-auto mb-3">
+                        <span>✓</span>
+                    </div>
+
+                    <h3 class="fw-bold mb-1">ការទូទាត់ទទួលបានជោគជ័យ</h3>
+
+                    <p class="mb-0 opacity-75">
+                        ប្រតិបត្តិការរបស់អ្នកត្រូវបានបញ្ចប់ដោយជោគជ័យ
+                    </p>
+                </div>
+
+                <!-- BODY -->
+                <div class="modal-body p-4">
+
+                    <!-- PAYMENT DETAILS -->
+                    <div class="payment-details">
+
+                        <div class="detail-item">
+                            <span>Order ID</span>
+                            <strong>#ORD-2045</strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>Payment Method</span>
+                            <strong>Credit Card</strong>
+                        </div>
+
+                        <div class="detail-item border-0 pb-0 mb-0">
+                            <span>Total Paid</span>
+                            <strong class="text-success">$120.00</strong>
+                        </div>
+
+                    </div>
+
+                    <!-- MESSAGE -->
+                    <div class="text-center mt-4">
+                        <p class="text-muted mb-4">
+                            អរគុណសម្រាប់ការទិញទំនិញ! យើងកំពុងរៀបចំការបញ្ជាទិញរបស់អ្នក។
+                        </p>
+
+                        <!-- BUTTONS -->
+                        <div class="d-grid gap-2">
+
+                            <a href="indext.html" class="btn btn-success rounded-pill py-2 fw-semibold">
+                                បន្តទិញទំនិញ
+                            </a>
+
+                            <button class="btn btn-light border rounded-pill py-2" data-bs-dismiss="modal">
+                                បិទ
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- Logout Modal -->
     <div class="modal fade" id="logoutModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
