@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You&Me Shop</title>
+    <title>Khmer New Year</title>
     <link rel="icon" href="assets/img/logo/" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_chakriya.css">
     <link rel="stylesheet" href="assets/css/style_sokmean.css">
+    <!-- <link rel="stylesheet" href="assets/css/style_aboutus_sak.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Dangrek&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -20,73 +22,97 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 
 
 </head>
 
 <body>
+    <div class=" mb-5">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container">
+                <a href class="navbar-brand">
+                    <img src="assets/img/logo-sak-img-removebg-preview.png" alt class="logo" width="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" navbar-nav  m-auto mb-2  gap-3">
+                        <li class="nav-item">
+                            <a href="account_me.html" class="nav-link hover-underline"><i class="bi bi-house-door"></i>
+                                ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bag-fill"></i> ទំនិញ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="men.html">បុរស</a>
+                                </li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="women.html">នារី</a>
+                                </li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="accessories.html">សម្ភារៈ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about_us.html" class="nav-link hover-underline"><i class="bi bi-people-fill"></i>
+                                អំពីពួកយើង</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact_us.html" class="nav-link hover-underline"><i class="bi bi-telephone"></i>
+                                ទំនាក់ទំនង</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-fire"></i> រដូវកាល
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3 " href="summer.html">រដូវក្ដៅ</a>
+                                </li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3"
+                                        href="winter.html">រដូវត្រជាក់</a>
+                                </li>
+                                <li><a class="dropdown-item hover-text rounded-2"
+                                        href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class=" buttn">
+                        <a href="addtocard.html" class=" btn btn-outline-warning rounded-pill fs-6 p-btn"><i
+                                class="bi bi-cart-plus"></i> កន្រ្តក</a>
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <a href="" class="btn btn-outline-warning rounded-pill p-btn1">
+                                    <img class=" me" src="assets/img/people.png" alt=""> <i
+                                        class="bi bi-caret-down"></i>
+                                </a>
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom fixed-top">
-        <div class="container">
-
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo/logo-sak-img-removebg-preview.png" height="45">
-            </a>
-
-            <!-- Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="menu">
-
-                <!-- Center Menu -->
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">ដើម</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">លក់</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">អំពីពួកយើង</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ទំនាក់ទំនង</a></li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            រដូវកាល
-                        </a>
-                        <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="summer.html">រដូវក្ដៅ</a></li>
-                            <li><a class="dropdown-item" href="winter.html">រដូវរងារ</a></li>
-                            <li><a class="dropdown-item" href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <!-- Right -->
-                <div class="d-flex align-items-center gap-3">
-
-                    <!-- Search -->
-                    <div class="search-box">
-                        <i class="bi bi-search"></i>
-                        <input type="text" placeholder="ស្វែងរក...">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="profile_me.html"><i class="bi bi-person-square"></i>
+                                        មើលគណនី</a></li>
+                                <li><a class="dropdown-item" href="history_sak.html"> <i
+                                            class="bi bi-clock-history"></i> ប្រវត្តិការទិញ</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#logoutModal"><i class="bi bi-box-arrow-right"></i>
+                                        ចេញពីគណនី</a></li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <!-- Cart -->
-                    <a href="#" class="nav-icon cart-icon">
-                        <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
-                        <span class="cart-badge">3</span>
-                    </a>
-
-                    <!-- User -->
-                    <a href="#" class="nav-icon user-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-
                 </div>
             </div>
-        </div>
-    </nav>
-    
-    <section class="hero-section-kh">
+        </nav>
+
+    </div>
+    <!-- <section class="hero-section-kh">
         <div class="overlay"></div>
         <div class="hero-content">
             <div class="text-box">
@@ -103,12 +129,13 @@
                 <a class="btn btn-primary">ទិញឥឡូវ</a>
             </div>
         </div>
-    </section>
-    <marquee class="mq-kh" behavior="scroll" direction="left" loop="auto">
-        <h1>In the Khmer new year We dicount 60% for you</h1>
+    </section> -->
+    <marquee class="mq-kh​​ mt-5" behavior="scroll" direction="left" loop="auto">
+        <h1>🔥 Big Sale 50% OFF - Free Shipping 🔥</h1>
     </marquee>
     ​
     <div class="container my-5">
+        <h1 class=" text-center fw-bold mb-5 text-uppercase text-dark">សម្រាប់រដូវកាលចូលឆ្នាំខ្មែរ</h1>
 
         <h3 class="mb-4">⚡ All Under $99.99 🛒</h3>
 
@@ -124,7 +151,7 @@
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $60.57 <span class="old-price">$10.59</span></p>
+                        <p class="price mb-1">US $60.57 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
@@ -135,13 +162,13 @@
             <div class="col-md-3">
                 <div class="position-relative product-card">
                     <span class="discount">-38%</span>
-                    <img src="assets/img/khmer/Cambodia-traditional-dress2.webp"​​​​​​​​​ style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal" >
+                    <img src="assets/img/khmer/Cambodia-traditional-dress2.webp" ​​​​​​​​​ style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $80.57 <span class="old-price">$10.59</span></p>
+                        <p class="price mb-1">US $80.57 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
@@ -158,7 +185,7 @@
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $70.57 <span class="old-price">$10.59</span></p>
+                        <p class="price mb-1">US $70.57 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
@@ -175,7 +202,7 @@
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $60.57 <span class="old-price">$10.59</span></p>
+                        <p class="price mb-1">US $60.57 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
@@ -185,13 +212,13 @@
             <!-- Product 5 (auto xuống dòng) -->
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/khmer/pexels-hanuman-photo-studio-564865561-19126458.jpg" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal" >
+                    <img src="assets/img/khmer/pexels-hanuman-photo-studio-564865561-19126458.jpg"
+                        style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $80.00</p>
+                        <p class="price mb-1">US $80.00 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
@@ -201,13 +228,13 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/khmer/download (1).jfif" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/khmer/download (1).jfif" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $90.00</p>
+                        <p class="price mb-1">US $90.00 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
@@ -216,44 +243,13 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/khmer/download (2).jfif" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/khmer/download (2).jfif" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $80.00</p>
-                        <p class="mb-0">Khmer clothing set</p>
-                    </div>
-                    <i class="fa-regular fa-heart favorite"></i>
-                </div>
-            </div>
-
-
-            <div class="col-md-3">
-                <div class="product-card">
-                    <img src="assets/img/khmer/download (3).jfif" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
-                </div>
-
-                <div class="d-flex justify-content-between mt-2">
-                    <div>
-                        <p class="price mb-1">US $80.90</p>
-                        <p class="mb-0">Khmer clothing set</p>
-                    </div>
-                    <i class="fa-regular fa-heart favorite"></i>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="product-card">
-                    <img src="assets/img/khmer/download (4).jfif" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
-                </div>
-
-                <div class="d-flex justify-content-between mt-2">
-                    <div>
-                        <p class="price mb-1">US $70.80</p>
+                        <p class="price mb-1">US $80.00 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
@@ -263,13 +259,13 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/khmer/download (5).jfif" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/khmer/download (3).jfif" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $70.00</p>
+                        <p class="price mb-1">US $80.90 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
@@ -278,21 +274,52 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/khmer/download.jfif" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/khmer/download (4).jfif" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
                     <div>
-                        <p class="price mb-1">US $80.00</p>
+                        <p class="price mb-1">US $70.80 <span class="old-price">$100.59</span></p>
                         <p class="mb-0">Khmer clothing set</p>
                     </div>
                     <i class="fa-regular fa-heart favorite"></i>
                 </div>
             </div>
 
-            
-             <div class="view-all">
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/khmer/download (5).jfif" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $70.00 <span class="old-price">$100.59</span></p>
+                        <p class="mb-0">Khmer clothing set</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="assets/img/khmer/download.jfif" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div>
+                        <p class="price mb-1">US $80.00 <span class="old-price">$100.59</span></p>
+                        <p class="mb-0">Khmer clothing set</p>
+                    </div>
+                    <i class="fa-regular fa-heart favorite"></i>
+                </div>
+            </div>
+
+
+            <div class="view-all">
                 <a class="view-all-btn">មើលទំនិញទាំងអស់</a>
             </div>
 
@@ -342,9 +369,9 @@
                                     <button class="btn btn-outline-secondary" onclick="changeQty(1)">+</button>
                                 </div>
 
-                                <button class="btn btn-dark w-100">
+                                <a href="addtocard.html" class="btn btn-dark w-100">
                                     ដាក់ចូលកន្រ្តក <i class="bi bi-cart3"></i>
-                                </button>
+                                </a>
 
                             </div>
 
@@ -355,8 +382,9 @@
             </div>
         </div>
     </div>
-    
-​   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    ​
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.querySelectorAll('.favorite').forEach(icon => {
             icon.onclick = function () {
@@ -375,12 +403,69 @@
             document.getElementById("qty").innerText = quantity;
         }
     </script>
+
+
+    <script>
+        window.addEventListener("scroll", function () {
+            let navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("navbar-scrolled", window.scrollY > 50);
+        });
+    </script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) { // Adjust this value based on when you want the color to change
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <!-- Logout Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow">
+
+                <div class="modal-body text-center p-5">
+
+                    <!-- Icon -->
+                    <div class="mb-4">
+                        <div class="logout-icon mx-auto">
+                            ⎋
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="fw-bold mb-2">Logout Account</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-4">
+                        Are you sure you want to logout?
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-light w-50 rounded-3" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+
+                        <a href="indext.html" class="btn btn-danger w-50 rounded-3">
+                            Logout
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-columns">
                 <div class="footer-brand">
                     <a class="footer-logo">
-                        <img src="assets/img/logo/logo-sak-img-removebg-preview.png" alt width="140px">
+                        <img src="assets/img/logo-sak-img-removebg-preview.png" alt width="140px">
                     </a>
                     <div class="footer-socials">
                         <a><i class="ri-facebook-fill"></i></a>
@@ -393,30 +478,23 @@
                 <div class="footer-links">
                     <h3>ហាង</h3>
                     <ul>
-                        <li><a href="women_chakriya.html">នារី</a></li>
-                        <li><a href="men_chakriya.html">បុរស</a></li>
-                        <li><a href="accessories_chakriya.html">សម្ភារ:</a></li>
+                        <li><a href="women.html">នារី</a></li>
+                        <li><a href="men.html">បុរស</a></li>
+                        <li><a href="accessories.html">សម្ភារ:</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links">
                     <h3>ក្រុមហ៊ុន</h3>
                     <ul>
-                        <li><a href="about_us_sak.html">អំពីពួកយើង</a></li>
-                        <li><a href="contact_us_sak.html">ទំនាក់ទំនង</a></li>
-                        <li><a href="location_sak.html">ទីតាំង</a></li>
+                        <li><a href="about_us.html">អំពីពួកយើង</a></li>
+                        <li><a href="contact_us.html">ទំនាក់ទំនង</a></li>
+                        <li><a href="location.html">ទីតាំង</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        window.addEventListener("scroll", function () {
-            let navbar = document.querySelector(".navbar");
-            navbar.classList.toggle("navbar-scrolled", window.scrollY > 50);
-        });
-    </script>
 
 
 </body>

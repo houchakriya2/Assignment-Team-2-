@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Payment</title>
+    <link rel="stylesheet" href="assets/css/style_chakriya.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dangrek&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exile&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <style>
+        body {
+            margin-top: 80px !important;
+            background: #eef1f5;
+            font-family: Arial, sans-serif;
+        }
+
+        /* MAIN BOX */
+        .checkout-box {
+            border-radius: 18px;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            background: white;
+            overflow: hidden;
+        }
+
+        /* TITLE */
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        /* OPTION STYLE */
+        .option {
+            display: block;
+            padding: 12px 14px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            border-color: black;
+        }
+
+        /* SECTIONS */
+        .box {
+            display: none;
+            margin-top: 12px;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            background: #fff;
+        }
+
+        /* SHOW BASED ON SELECTION */
+        #card:checked~.content .card-box {
+            display: block;
+        }
+
+        #paypal:checked~.content .paypal-box {
+            display: block;
+        }
+
+        #qr:checked~.content .qr-box {
+            display: block;
+        }
+
+        /* TOTAL */
+        .total-box {
+            background: #fafafa;
+            border-radius: 12px;
+            padding: 12px 15px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        /* BUTTON */
+        .pay-btn {
+            background: black;
+            color: white;
+            border-radius: 12px;
+            width: 100%;
+            padding: 12px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        .pay-btn:hover {
+            border: 1px solid black;
+            background: transparent;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="sec">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container">
+                <a href class="navbar-brand">
+                    <img src="assets/img/logo-sak-img-removebg-preview.png" alt class="logo" width="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" navbar-nav  m-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a href="indext.html" class="nav-link hover-underline"><i class="bi bi-house-door"></i>
+                                ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bag-fill"></i> ទំនិញ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="men_chakriya.html">បុរស</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="women_chakriya.html">នារី</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="accessories_chakriya.html">សម្ភារៈ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about_us_sak.html" class="nav-link hover-underline"><i
+                                    class="bi bi-people-fill"></i> អំពីពួកយើង</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact_us_sak.html" class="nav-link hover-underline"><i
+                                    class="bi bi-telephone"></i> ទំនាក់ទំនង</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-fire"></i> រដូវកាល
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="summer.html">រដូវក្ដៅ</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="winter.html">រដូវត្រជាក់</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class=" d-flex gap-3 buttn">
+                        <a href="addtocard_roeun.html" class=" btn btn-outline-warning rounded-pill fs-6 px-3"><i
+                                class="bi bi-cart-plus"></i> កន្រ្តក</a>
+                        <a href="login_nit.html" class="btn fs-6 btn-outline-warning rounded-pill px-3"><i
+                                class="fa-solid fa-user-plus icon"></i> ចូលគណនី</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container py-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-7">
+
+                <div class="checkout-box p-4">
+
+                    <div class="title">ការទូទាត់ប្រាក់</div>
+
+                    <!-- CUSTOMER INFO (kept from your original page) -->
+                    <h6 class="mb-3">ព័ត៌មានអតិថិជន</h6>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <input class="form-control" placeholder="នាមត្រកូល">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control" placeholder="នាមខ្លួន">
+                        </div>
+
+                        <div class="col-12">
+                            <input class="form-control" placeholder="អ៊ីមែល">
+                        </div>
+
+                        <div class="col-12">
+                            <input class="form-control" placeholder="លេខទូរស័ព្ទ">
+                        </div>
+
+                        <div class="col-12">
+                            <input class="form-control" placeholder="ទីកន្លែង">
+                        </div>
+
+                    </div>
+
+                    <!-- PAYMENT OPTIONS -->
+                    <div class="title">សូមជ្រើសរើសវិធីទូទាត់ប្រាក់</div>
+
+                    <input type="radio" id="card" name="pay" checked>
+                    <label class="option" for="card">💳 Credit / Debit Card</label>
+
+                    <input type="radio" id="paypal" name="pay">
+                    <label class="option" for="paypal">🌐 PayPal</label>
+
+                    <input type="radio" id="qr" name="pay">
+                    <label class="option" for="qr">📱 QR Code Payment</label>
+
+                    <!-- CONTENT -->
+                    <div class="content">
+
+                        <!-- CARD -->
+                        <div class="box card-box">
+                            <input class="form-control mb-2" placeholder="Card Number">
+
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <input class="form-control" placeholder="Expiry Date">
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-control" placeholder="CVV">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PAYPAL -->
+                        <div class="box paypal-box">
+                            <p class="text-muted mb-0">
+                                You will be redirected securely to PayPal to complete your payment.
+                            </p>
+                        </div>
+
+                        <!-- QR -->
+                        <div class="box qr-box text-center">
+                            <h6 class="mb-3">Scan to Pay</h6>
+
+                            <img
+                                src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=Pay%2065USD%20Order">
+
+                            <p class="text-muted small mt-2">
+                                Use ABA / Wing / Bakong / Mobile banking
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- TOTAL ONLY -->
+                    <div class="total-box">
+                        <span>តម្លៃសរុប</span>
+                        <span>$65</span>
+                    </div>
+
+                    <button class="btn pay-btn">ទូទាត់ប្រាក់</button>
+
+                    <p class="text-muted text-center small mt-3">
+                        Secure encrypted checkout
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-brand">
+                    <a class="footer-logo">
+                        <img src="assets/img/logo-sak-img-removebg-preview.png" alt width="140px">
+                    </a>
+                    <div class="footer-socials">
+                        <a><i class="ri-facebook-fill"></i></a>
+                        <a><i class="ri-instagram-fill"></i></a>
+                        <a><i class="ri-twitter-x-fill"></i></a>
+                        <a><i class="ri-pinterest-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ហាង</h3>
+                    <ul>
+                        <li><a href="women_chakriya.html">នារី</a></li>
+                        <li><a href="men_chakriya.html">បុរស</a></li>
+                        <li><a href="accessories_chakriya.html">សម្ភារ:</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>ក្រុមហ៊ុន</h3>
+                    <ul>
+                        <li><a href="about_us_sak.html">អំពីពួកយើង</a></li>
+                        <li><a href="contact_us_sak.html">ទំនាក់ទំនង</a></li>
+                        <li><a href="location_sak.html">ទីតាំង</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Logout Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow">
+
+                <div class="modal-body text-center p-5">
+
+                    <!-- Icon -->
+                    <div class="mb-4">
+                        <div class="logout-icon mx-auto">
+                            ⎋
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="fw-bold mb-2">Logout Account</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-4">
+                        Are you sure you want to logout?
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-light w-50 rounded-3" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+
+                        <a href="indext.html" class="btn btn-danger w-50 rounded-3">
+                            Logout
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) { // Adjust this value based on when you want the color to change
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
