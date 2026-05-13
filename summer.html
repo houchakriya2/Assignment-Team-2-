@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/img/logo/" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style_sokmean.css">
+    <link rel="stylesheet" href="assets/css/style_aboutus_sak.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Dangrek&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -20,72 +21,68 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 
 </head>
 
 <body>
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom fixed-top">
-        <div class="container">
-
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo/logo-sak-img-removebg-preview.png" height="45">
-            </a>
-
-            <!-- Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="menu">
-
-                <!-- Center Menu -->
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">ដើម</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">លក់</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">អំពីពួកយើង</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ទំនាក់ទំនង</a></li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            រដូវកាល
-                        </a>
-                        <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="summer.html">រដូវក្ដៅ</a></li>
-                            <li><a class="dropdown-item" href="winter.html">រដូវរងារ</a></li>
-                            <li><a class="dropdown-item" href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <!-- Right -->
-                <div class="d-flex align-items-center gap-3">
-
-                    <!-- Search -->
-                    <div class="search-box">
-                        <i class="bi bi-search"></i>
-                        <input type="text" placeholder="ស្វែងរក...">
+    <div class="sec">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container">
+                <a href class="navbar-brand">
+                    <img src="assets/img/logo-sak-img-removebg-preview.png" alt class="logo" width="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" navbar-nav  m-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a href="indext.html" class="nav-link hover-underline"><i class="bi bi-house-door"></i> ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bag-fill"></i> ទំនិញ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">បុរស</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="#">នារី</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="#">សម្ភារៈ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about_us_sak.html" class="nav-link hover-underline"><i class="bi bi-people-fill"></i> អំពីពួកយើង</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact_us_sak.html" class="nav-link hover-underline"><i class="bi bi-telephone"></i> ទំនាក់ទំនង</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-fire"></i> រដូវកាល
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="summer.html">រដូវក្ដៅ</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2 mb-3" href="winter.html">រដូវត្រជាក់</a></li>
+                                <li><a class="dropdown-item hover-text rounded-2" href="khmer new year.html">ចូលឆ្នាំខ្មែរ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class=" d-flex gap-3 buttn">
+                        <a href="addtocard_roeun.html" class=" btn btn-outline-warning rounded-pill fs-6 px-3"><i class="bi bi-cart-plus"></i> កន្រ្តក</a>
+                        <a href="login_nit.html" class="btn fs-6 btn-outline-warning rounded-pill px-3"><i
+                                class="fa-solid fa-user-plus icon"></i> ចូលគណនី</a>
                     </div>
-
-                    <!-- Cart -->
-                    <a href="#" class="nav-icon cart-icon">
-                        <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
-                        <span class="cart-badge">3</span>
-                    </a>
-
-                    <!-- User -->
-                    <a href="#" class="nav-icon user-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-
                 </div>
             </div>
-        </div>
-    </nav>
-    
+        </nav>
+
+    </div>
     <section class="hero-section-s">
         <div class="overlay"></div>
         <div class="hero-content">
@@ -104,9 +101,13 @@
             </div>
         </div>
     </section>
-    <marquee class="mq-s" behavior="scroll" direction="left" loop="auto">
-        <h1>In the Winter We dicount 60% for you</h1>
-    </marquee>
+    <section>
+        
+       <marquee class="mq-w" behavior="scroll" direction="left" loop="auto">
+            <h1>🔥 Big Sale 50% OFF - Free Shipping 🔥</h1>
+        </marquee>
+    </section>
+
     ​
     <div class="container my-5">
 
@@ -135,8 +136,8 @@
             <div class="col-md-3">
                 <div class="position-relative product-card">
                     <span class="discount">-38%</span>
-                    <img src="assets/img/summer/1770637208-2.jpg"​​​​​​​​​ style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal" >
+                    <img src="assets/img/summer/1770637208-2.jpg" ​​​​​​​​​ style="cursor:pointer"
+                        data-bs-toggle="modal" data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -152,8 +153,8 @@
             <div class="col-md-3">
                 <div class="position-relative product-card">
                     <span class="discount">-38%</span>
-                    <img src="assets/img/summer/1770637346-21.jpg" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/1770637346-21.jpg" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -169,8 +170,8 @@
             <div class="col-md-3">
                 <div class="position-relative product-card">
                     <span class="discount">-38%</span>
-                    <img src="assets/img/summer/1770637450-31-(31).jpg" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/1770637450-31-(31).jpg" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -185,8 +186,8 @@
             <!-- Product 5 (auto xuống dòng) -->
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/1770637456-31-(30).jpg" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal" >
+                    <img src="assets/img/summer/1770637456-31-(30).jpg" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -201,8 +202,8 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/1770637468-31-(28).jpg" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/1770637468-31-(28).jpg" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -216,8 +217,8 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/1770637487-31-(25).jpg" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/1770637487-31-(25).jpg" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -247,8 +248,8 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/38cf72bdgreen_20back.webp" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/38cf72bdgreen_20back.webp" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -263,8 +264,8 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/424daac0Screen_20Shot_202026-03-04_20at_2010.26.17_20AM.webp" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/424daac0Screen_20Shot_202026-03-04_20at_2010.26.17_20AM.webp"
+                        style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -278,8 +279,8 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/71cb0044Screen_20Shot_202026-03-04_20at_2010.22.25_20AM.webp" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/71cb0044Screen_20Shot_202026-03-04_20at_2010.22.25_20AM.webp"
+                        style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -293,8 +294,8 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/8e80bc09Screen_Shot_2026-03-03_at_11.57.58_AM-removebg-preview.webp" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/8e80bc09Screen_Shot_2026-03-03_at_11.57.58_AM-removebg-preview.webp"
+                        style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -308,8 +309,8 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/a04db86dclem_20back.webp" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/a04db86dclem_20back.webp" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -323,8 +324,8 @@
 
             <div class="col-md-3">
                 <div class="product-card">
-                    <img src="assets/img/summer/ab6045b7blouse.webp" style="cursor:pointer"
-                        data-bs-toggle="modal" data-bs-target="#productModal">
+                    <img src="assets/img/summer/ab6045b7blouse.webp" style="cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#productModal">
                 </div>
 
                 <div class="d-flex justify-content-between mt-2">
@@ -351,7 +352,7 @@
                     <i class="fa-regular fa-heart favorite"></i>
                 </div>
             </div>
-             <div class="view-all">
+            <div class="view-all">
                 <a class="view-all-btn">មើលទំនិញទាំងអស់</a>
             </div>
 
@@ -414,8 +415,9 @@
             </div>
         </div>
     </div>
-    
-​   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    ​
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.querySelectorAll('.favorite').forEach(icon => {
             icon.onclick = function () {
