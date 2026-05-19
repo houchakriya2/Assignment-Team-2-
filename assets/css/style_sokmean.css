@@ -3,9 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
+/* body {
     font-family: 'Kantumruy Pro', sans-serif;
-}
+} */
 /* Navbar */
 .navbar-custom {
     padding: 12px 0;
@@ -461,7 +461,7 @@ body {
   color: white;
   padding-top: 64px;
   padding-bottom: 32px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   
 }
 
