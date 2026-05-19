@@ -6,10 +6,6 @@ body {
 
 /* ======= */
 
-
-
-/* TOPBAR */
-
 .topbar {
     background: #198754;
     padding: 8px 0;
@@ -17,9 +13,6 @@ body {
     font-size: 14px;
 }
 
-.topbar i {
-    margin-right: 5px;
-}
 
 /* NAVBAR */
 
