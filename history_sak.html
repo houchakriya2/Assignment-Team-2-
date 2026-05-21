@@ -137,12 +137,12 @@
 
                         <hr>
 
-                        <a href="personalinfo_sak.html" class="menu-btn menu-active">
+                        <a href="personalinfo_sak.html" class="menu-btn">
                             <i class="bi bi-person-fill me-2"></i>
                             ប្រវត្តិរបស់ខ្ញុំ
                         </a>
 
-                        <a href="history_sak.html" class="menu-btn">
+                        <a href="history_sak.html" class="menu-btn menu-active">
                             <i class="bi bi-cart-fill me-2"></i>
                             ប្រវត្តិការទិញ
                         </a>
@@ -161,7 +161,8 @@
                             ការកំណត់
                         </a>
 
-                        <a class="menu-btn text-danger">
+                        <a class="menu-btn text-danger" data-bs-toggle="modal"
+                                    data-bs-target="#logoutModal">
                             <i class="bi bi-box-arrow-right me-2"></i>
                             ចាកចេញពីគណនី
                         </a>
@@ -273,6 +274,45 @@
         </div>
 
     </section>
+
+    <!-- Logout Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow">
+
+                <div class="modal-body text-center p-5">
+
+                    <!-- Icon -->
+                    <div class="mb-4">
+                        <div class="logout-icon mx-auto">
+                            ⎋
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="fw-bold mb-2">Logout Account</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-4">
+                        Are you sure you want to logout?
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-light w-50 rounded-3" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+
+                        <a href="indext.html" class="btn btn-danger w-50 rounded-3">
+                            Logout
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-container">
