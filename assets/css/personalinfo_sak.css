@@ -63,7 +63,9 @@ body {
     margin-bottom: 25px;
 }
 
-.menu-btn {
+a.menu-btn {
+    display: inline-block;
+    text-decoration: none;
     width: 100%;
     border: none;
     background: transparent;
@@ -74,12 +76,12 @@ body {
     transition: 0.3s;
 }
 
-.menu-btn:hover {
+a.menu-btn:hover {
     background: #054ad3;
     color: white;
 }
 
-.menu-active {
+a.menu-active {
     background: #054ad3;
     color: white;
     font-weight: bold;
